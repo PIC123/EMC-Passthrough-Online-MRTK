@@ -1,0 +1,324 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5a46bda3295124c99b0e6537ac7252, type: 3}
+  m_Name: witai
+  m_EditorClassIdentifier: 
+  _clientAccessToken: 2JGRB7SGSCT2KADGWT2FCYQ2IQ42W635
+  _appInfo:
+    name: earth_bot_demo
+    id: 606600628190078
+    lang: en
+    isPrivate: 1
+    createdAt: 2023-04-24T11:58:13-0700
+    trainingStatus: 1
+    lastTrainDuration: 40
+    lastTrainedAt: 2023-06-06T11:22:08-0700
+    nextTrainAt: 2023-06-06T11:21:28-0700
+    intents:
+    - id: 3452616185066995
+      name: go_to_display
+      entities:
+      - name: display:display
+        id: 774296967740817
+    - id: 197288849775674
+      name: load_data
+      entities:
+      - name: data_type:data_type
+        id: 999656094352704
+      - name: display:display
+        id: 774296967740817
+      - name: wit$location:location
+        id: 164380636257385
+    - id: 221623187176970
+      name: load_map
+      entities:
+      - name: display:display
+        id: 774296967740817
+      - name: wit$location:location
+        id: 164380636257385
+    - id: 1966758070363649
+      name: question
+      entities:
+      - name: data_type:data_type
+        id: 999656094352704
+      - name: question_type:question_type
+        id: 209454915203855
+      - name: wit$location:location
+        id: 164380636257385
+    - id: 1651279141977122
+      name: set_zoom
+      entities:
+      - name: zoom_level:zoom_level
+        id: 6115666935176092
+    entities:
+    - name: data_type
+      id: 886984439060919
+      lookups:
+      - free-text
+      - keywords
+      roles:
+      - name: data_type
+        id: 999656094352704
+      keywords:
+      - keyword: flood
+        synonyms:
+        - average flood
+        - flood
+        - flood risk
+        - flooding
+      - keyword: rainfall
+        synonyms:
+        - average rainfall
+        - rainfall
+      - keyword: temperature
+        synonyms:
+        - average temperatu
+        - average temperature
+        - max temperature
+        - temperature
+    - name: display
+      id: 1214075552834066
+      lookups:
+      - free-text
+      - keywords
+      roles:
+      - name: display
+        id: 774296967740817
+      keywords:
+      - keyword: globe
+        synonyms:
+        - globe
+        - sphere
+      - keyword: hyperwall
+        synonyms:
+        - hyperwall
+        - wall
+      - keyword: hyperwall display
+        synonyms:
+        - hyperwall display
+      - keyword: hyperwall display 2
+        synonyms:
+        - hyperwall display 2
+      - keyword: table
+        synonyms:
+        - map table
+        - table
+    - name: question_type
+      id: 1643051612866668
+      lookups:
+      - free-text
+      - keywords
+      roles:
+      - name: question_type
+        id: 209454915203855
+      keywords:
+      - keyword: How
+        synonyms:
+        - how
+      - keyword: How
+        synonyms:
+        - how
+      - keyword: Which
+        synonyms:
+        - which
+      - keyword: how
+        synonyms:
+        - how
+      - keyword: what
+        synonyms:
+        - what
+      - keyword: when
+        synonyms:
+        - when
+      - keyword: where
+        synonyms:
+        - where
+      - keyword: who
+        synonyms:
+        - who
+      - keyword: why
+        synonyms:
+        - why
+    - name: wit$location
+      id: 535a80ff-6399-4653-8b2a-c770dd014965
+      lookups: []
+      roles:
+      - name: location
+        id: 164380636257385
+      keywords: []
+    - name: zoom_level
+      id: 1277970659459049
+      lookups:
+      - free-text
+      - keywords
+      roles:
+      - name: zoom_level
+        id: 6115666935176092
+      keywords:
+      - keyword: 15
+        synonyms:
+        - 15
+      - keyword: 20
+        synonyms:
+        - 20
+    traits: []
+    voices:
+    - name: Cael
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: Cam
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: Carl
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: Charlie
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - fast
+      - projected
+    - name: Cody
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: Connor
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: Cooper
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: Prospector
+      locale: en_US
+      gender: male
+      styles:
+      - default
+    - name: Railey
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: Rebecca
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: Remi
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: Rubie
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: Vampire
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: Colin
+      locale: en_CA
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: Rosie
+      locale: en_CA
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    composer:
+      canvases: []
+  _configurationId: b177d9a6-1419-4e8a-b249-cf8fa75d712f
+  timeoutMS: 10000
+  endpointConfiguration:
+    _uriScheme: 
+    _authority: 
+    _port: 0
+    _witApiVersion: 
+    _message: 
+    _speech: 
+    _dictation: 
+    _synthesize: 
+    _event: 
+    _converse: 
+  isDemoOnly: 0
+  useConduit: 1
+  _manifestLocalPath: ConduitManifest-d6c1789b-e1f9-43da-813d-05e829a8e4cb.json
+  excludedAssemblies: []
+  relaxedResolution: 0

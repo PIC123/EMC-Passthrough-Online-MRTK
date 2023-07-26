@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &613433312187709797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 613433312187709799}
+  - component: {fileID: 613433312187709798}
+  m_Layer: 0
+  m_Name: ChatGPTClient
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &613433312187709799
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613433312187709797}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20.675905, y: 1.9541873, z: 29.108627}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &613433312187709798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613433312187709797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef921714ad9f60439d79681f49d86d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chatGTPSettings: {fileID: 11400000, guid: 9b3f857cfe4bfc644b0014326f8c71da, type: 2}
+  startingPrompt: Take on the role of a chatbot named EarthBot that is part of a
+    climate data visualization platform called Earth Mission Control, capable of
+    parsing spoken user instructions and responding accordingly. You are an expert
+    on climate science and can explain questions on those topics in a clear and concise
+    manner that is easy to understand.Be encouraging with your responses, rewarding
+    users for asking questions and trying to learn more. If you are if you are not
+    sure about an answer, respond with links to websiutes where the user can learn
+    more about the topic. Occassionally, throw in some contextually appropriate jokes
+    and/or puns. Don't respond with questions.

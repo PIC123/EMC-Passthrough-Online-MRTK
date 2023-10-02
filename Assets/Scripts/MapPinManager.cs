@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class MapPinManager : MonoBehaviour
 {
     public GlobeManager.Marker markerData;
-    public MapRenderer mapRenderer;
+    public MapManager mapManager;
     public Text overviewText;
     private SpinFree spinner;
     public Material goodMat;
@@ -20,7 +20,7 @@ public class MapPinManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mapRenderer = GameObject.FindGameObjectsWithTag("MapTable")[0].GetComponent<MapRenderer>();
+        mapManager = GameObject.FindGameObjectsWithTag("MapTable")[0].GetComponent<MapManager>();
         spinner = gameObject.GetComponentInParent<SpinFree>();
         globeManager = gameObject.GetComponentInParent<GlobeManager>();
     }
@@ -44,7 +44,7 @@ public class MapPinManager : MonoBehaviour
 
     public void setLatLong()
     {
-        mapRenderer.Center = new LatLon(markerData.latitude, markerData.longitude);
+        mapManager.setLatLong(markerData.latitude, markerData.longitude);
         Debug.Log($"going to {markerData.title}");
         globeManager.selectedMarker = markerData;
     }

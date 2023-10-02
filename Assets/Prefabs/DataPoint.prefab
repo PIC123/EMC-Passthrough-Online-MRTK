@@ -126,7 +126,7 @@ MonoBehaviour:
     ch4: 0
     n2o: 0
     h2o: 0
-  mapRenderer: {fileID: 0}
+  mapManager: {fileID: 0}
   overviewText: {fileID: 0}
   goodMat: {fileID: 2100000, guid: 6bcf3c63b4aeb2143968eca1ab29779d, type: 2}
   badMat: {fileID: 2100000, guid: e40ef1d4cbe0a314780756a5ae64e8eb, type: 2}
@@ -420,6 +420,9 @@ MonoBehaviour:
   oneHandRotationModeNear: 1
   oneHandRotationModeFar: 1
   releaseBehavior: 3
+  transformSmoothingLogicType:
+    reference: Microsoft.MixedReality.Toolkit.Utilities.DefaultTransformSmoothingLogic,
+      Microsoft.MixedReality.Toolkit.SDK
   smoothingFar: 1
   smoothingNear: 1
   moveLerpTime: 0.001
@@ -483,7 +486,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5008624627721370713}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
   m_Name: 
@@ -506,7 +509,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5008624627721370713}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
   m_Name: 
@@ -524,7 +527,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5008624627721370713}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db32660070d5d8e45ae9af22e105df1e, type: 3}
   m_Name: 
@@ -544,5 +547,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handType: 3
   proximityType: 3
+  executionOrder: 0
   constraintOnMovement: -1
   useLocalSpaceForConstraint: 1

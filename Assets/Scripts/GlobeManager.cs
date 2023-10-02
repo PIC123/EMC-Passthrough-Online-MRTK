@@ -31,9 +31,10 @@ public class GlobeManager : MonoBehaviour
 
     public GameObject markerPrefab;
     public string fileName;
-    public MapRenderer mapRenderer;
+    //public MapRenderer mapRenderer;
     public Material[] globeMaterials;
     public string[] globeAnimationUrls;
+    public VideoClip[] globeAnimationClips;
     private MarkerList markerList;
     private float radius;
     private Renderer globeMaterialRenderer;
@@ -132,7 +133,8 @@ public class GlobeManager : MonoBehaviour
 
     public void setGlobeAnimation(int mapType)
     {
-        videoPlayer.url = globeAnimationUrls[mapType];
+        //videoPlayer.url = globeAnimationUrls[mapType];
+        videoPlayer.clip = globeAnimationClips[mapType];
     }
 
     public void setGlobeScale(float globescale)

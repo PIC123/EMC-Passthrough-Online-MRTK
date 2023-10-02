@@ -41,7 +41,7 @@ MonoBehaviour:
     componentName: OpenXR Camera Settings
     priority: 0
     runtimePlatform: -1
-    settingsProfile: {fileID: 11400000, guid: 32349edfa9bacb94a9fe58923e9a2400, type: 2}
+    settingsProfile: {fileID: 0}
   nearClipPlaneOpaqueDisplay: 0.1
   farClipPlaneOpaqueDisplay: 1000
   cameraClearFlagsOpaqueDisplay: 2

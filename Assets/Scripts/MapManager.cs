@@ -5,6 +5,7 @@ using Microsoft.Geospatial;
 using Microsoft.Maps.Unity;
 using UnityEngine.UI;
 using TMPro;
+using Microsoft.MixedReality.Toolkit.UI;
 
 public class MapManager : MonoBehaviour
 {
@@ -17,7 +18,8 @@ public class MapManager : MonoBehaviour
     //public GameObject dataPanel;
     public GameObject water;
     public float waterLevel;
-    public Slider waterSlider;
+    //public Slider waterSlider;
+    public PinchSlider pinchSlider;
     public float initialWaterHeight;
     public GlobeManager globeManager;
     public ParticleSystem particles;
@@ -33,6 +35,14 @@ public class MapManager : MonoBehaviour
     public TextMeshProUGUI h2oText;
 
     private GlobeManager.Marker currMarker;
+
+    private MapTableSync _mapTableSync;
+
+    private void Awake()
+    {
+        _mapTableSync = GetComponent<MapTableSync>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,10 +54,12 @@ public class MapManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (waterSlider.value > waterSlider.maxValue * 0.1f)
+        //if (waterSlider.value > waterSlider.maxValue * 0.1f)
+        if (pinchSlider.SliderValue > 1f * 0.1f)
         {
             water.SetActive(true);
-            water.transform.position = new Vector3(water.transform.position.x, initialWaterHeight + waterSlider.value, water.transform.position.z);
+            water.transform.position = new Vector3(water.transform.position.x, initialWaterHeight + (pinchSlider.SliderValue*0.1f), water.transform.position.z);
+            //water.transform.position = new Vector3(water.transform.position.x, initialWaterHeight + waterSlider.value, water.transform.position.z);
         }
         else
         {
@@ -56,10 +68,12 @@ public class MapManager : MonoBehaviour
 
         if (controller.isGrabbed)
         {
-            mapRenderer.Center = new LatLon(
-                mapRenderer.Center.LatitudeInDegrees + controller.zdist * translationSpeedOffset,
-                mapRenderer.Center.LongitudeInDegrees + controller.xdist * translationSpeedOffset
-            );
+            setLatLong(mapRenderer.Center.LatitudeInDegrees + controller.zdist * translationSpeedOffset, mapRenderer.Center.LongitudeInDegrees + controller.xdist * translationSpeedOffset);
+            setLatLongText();
+            //mapRenderer.Center = new LatLon(
+            //    ,
+                
+            //);
         }
 
         //mapInfoText.text = $"Latitude: {mapRenderer.Center.LatitudeInDegrees} \n Longitude: {mapRenderer.Center.LongitudeInDegrees} \n Zoom Level: {mapRenderer.ZoomLevel}";
@@ -74,11 +88,26 @@ public class MapManager : MonoBehaviour
     public void setZoom(float zoomLevel)
     {
         mapRenderer.ZoomLevel = zoomLevel;
+        _mapTableSync.setZoom(zoomLevel);
     }
 
-    public void setLatLong(float targetLat, float targetLong)
+    public void setLatLong(double targetLat, double targetLong)
     {
         mapRenderer.Center = new LatLon(targetLat, targetLong);
+        _mapTableSync.setLat(targetLat);
+        _mapTableSync.setLong(targetLong);
+
+    }
+
+    public void setLatLongText()
+    {
+        var markerData = globeManager.selectedMarker;
+
+        // Update Basic Info Panel
+        locationText.text = markerData.title;
+        latText.text = markerData.latitude.ToString();
+        longText.text = markerData.longitude.ToString();
+        zoomText.text = mapRenderer.ZoomLevel.ToString();
     }
 
     public void setText()

@@ -1,0 +1,64 @@
+{
+    "dataItems":[{
+        "name":"CO2 Emissions",
+        "url":"url",
+        "description":"A bar graph displaying the amount of CO2 emissions over time, divided by country. Shows a clear upward trend, emphasizing the increasing global issue.",
+        "tags":["tags"]
+        },
+        {
+        "name":"Emission Contributors",
+        "url":"url",
+        "description":"A pie chart illustrating the major sectors contributing to emissions such as transportation, industry, agriculture, and residential.",
+        "tags":["tags"]
+        },
+        {
+        "name":"Global Emissions",
+        "url":"url",
+        "description":"A heatmap indicating the levels of global emissions. Darker regions correspond to higher emissions, providing a visual global overview.",
+        "tags":["tags"]
+        },
+        {
+        "name":"GHC Footprint Offset",
+        "url":"url",
+        "description":"Line chart showcasing the offset of the greenhouse gas (GHG) footprint over time, divided by sector and measures taken.",
+        "tags":["tags"]
+        },
+        {
+        "name":"PCR Use",
+        "url":"url",
+        "description":"A time series plot showing the usage of PCR tests during the pandemic, with spikes corresponding to infection waves.",
+        "tags":["tags"]
+        },
+        {
+        "name":"Air Emission Trends",
+        "url":"url",
+        "description":"A line graph portraying trends in air emissions over time, detailing both overall volume and different pollutant types.",
+        "tags":["tags"]
+        },
+        {
+        "name":"Historical Temperature Anomalies",
+        "url":"url",
+        "description":"Scatter plot of temperature anomalies from past centuries to now, highlighting deviations from the long-term average.",
+        "tags":["tags"]
+        },
+        {
+        "name":"Average Precipitation",
+        "url":"url",
+        "description":"Map overlaid with color-coded data showing average yearly precipitation in different regions worldwide.",
+        "tags":["tags"]
+        },
+        {
+        "name":"Flood Risk",
+        "url":"url",
+        "description":"A geographic map indicating areas of flood risk, differentiated by severity and probability.",
+        "tags":["tags"]
+        },
+        {
+        "name":"Global Surface Temperature",
+        "url":"url",
+        "description":"A 3D globe visualizing surface temperatures globally, with colors ranging from blue (cold) to red (hot).",
+        "tags":["tags"]
+        }
+    ]
+}
+

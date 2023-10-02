@@ -112,6 +112,11 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
             set { loader = value; }
         }
 
+        public DataItemList dataItemList;
+        public string dataFileName;
+
+        public ControlPanelManager panelManager;
+
         private void OnEnable()
         {
             // Make sure we find a collection
@@ -139,7 +144,6 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
                 scrollView.CellsPerTier = cellsPerTier;
                 scrollView.TiersPerPage = tiersPerPage;
             }
-
             gridObjectCollection = scrollView.GetComponentInChildren<GridObjectCollection>();
 
             if (gridObjectCollection == null)
@@ -161,9 +165,9 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
 
             if (!lazyLoad)
             {
-                for (int i = 0; i < numItems; i++)
+                for (int i = 0; i < dataItemList.dataItems.Length; i++)
                 {
-                    MakeItem(dynamicItem);
+                    MakeItem(dynamicItem, i);
                 }
                 scrollView.gameObject.SetActive(true);
                 gridObjectCollection.UpdateCollection();
@@ -181,11 +185,11 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
 
         private IEnumerator UpdateListOverTime(GameObject loaderViz, int instancesPerFrame)
         {
-            for (int currItemCount = 0; currItemCount < numItems; currItemCount++)
+            for (int currItemCount = 0; currItemCount < dataItemList.dataItems.Length; currItemCount++)
             {
                 for (int i = 0; i < instancesPerFrame; i++)
                 {
-                    MakeItem(dynamicItem);
+                    MakeItem(dynamicItem, currItemCount);
                 }
                 yield return null;
             }
@@ -198,10 +202,21 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
             gridObjectCollection.UpdateCollection();
         }
 
-        private void MakeItem(GameObject item)
+        private void MakeItem(GameObject item, int index)
         {
-            GameObject itemInstance = Instantiate(item, gridObjectCollection.transform);
+            var itemInstance = Instantiate(item, gridObjectCollection.transform);
+            var dataItemManager = itemInstance.GetComponent<DataItemManager>();
+            dataItemManager.setupItem(dataItemList.dataItems[index]);
             itemInstance.SetActive(true);
+        }
+
+        void Start()
+        {
+            TextAsset txtAsset = (TextAsset)Resources.Load(dataFileName);
+            dataItemList = JsonUtility.FromJson<DataItemList>(txtAsset.text);
+            MakeScrollingList();
+            panelManager.currentDataItem = dataItemList.dataItems[0];
+            panelManager.setPreviewDesc();
         }
     }
 }

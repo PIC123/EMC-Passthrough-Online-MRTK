@@ -11,11 +11,12 @@ public class JoystickBallController : MonoBehaviour
     public float zdist;
     public float heading;
     public float angle;
+    private bool firstGrab = true;
     // Start is called before the first frame update
     void Start()
     {
-        startPos = gameObject.transform.position;
-        startRot = gameObject.transform.rotation;
+        //startPos = gameObject.transform.position;
+        //startRot = gameObject.transform.rotation;
     }
 
     // Update is called once per frame
@@ -23,6 +24,12 @@ public class JoystickBallController : MonoBehaviour
     {
         if (isGrabbed)
         {
+            if (firstGrab)
+            {
+                startPos = gameObject.transform.position;
+                startRot = gameObject.transform.rotation;
+                firstGrab = false;
+            }
             var xdir = transform.position.x - startPos.x > 0 ? -1 : 1;
             var zdir = transform.position.z - startPos.z > 0 ? -1 : 1;
             var currx = new Vector3(transform.position.x, 0, 0);
@@ -37,6 +44,7 @@ public class JoystickBallController : MonoBehaviour
         {
             gameObject.transform.localPosition = new Vector3(0,0,0);
             gameObject.transform.rotation = startRot;
+            firstGrab = true;
         }
     }
 

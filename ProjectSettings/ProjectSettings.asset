@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: calebcram
-  productName: PassthroughOnlineMRTK_Release
+  companyName: pcherner
+  productName: EarthMissionControl-Online-test
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 2.0.0
+  bundleVersion: 0.6.0
   preloadedAssets:
   - {fileID: 11400000, guid: 135aad4040821c9458206f0b1c8adbc8, type: 2}
   metroInputSource: 0
@@ -155,7 +155,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.calebcram.PassthroughOnlineMRTK_Release
+    Android: com.pcherner.EarthMissionControlOnlinetest
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -434,7 +434,7 @@ PlayerSettings:
   openGLRequireES32: 0
   m_TemplateCustomTags: {}
   mobileMTRendering:
-    Android: 1
+    Android: 0
     iPhone: 1
     tvOS: 1
   m_BuildTargetGroupLightmapEncodingQuality:

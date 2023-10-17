@@ -9,6 +9,7 @@ TagManager:
   - lb_perchTarget
   - lb_groundTarget
   - hyperwall
+  - data_point
   layers:
   - Default
   - TransparentFX

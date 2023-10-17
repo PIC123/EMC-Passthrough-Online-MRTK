@@ -67,6 +67,7 @@ public class GlobeManager : MonoBehaviour
             var correctedRot = AlignRotation(correctedPos);
             // Instantiate marker
             var mapMarker = Instantiate(markerPrefab, correctedPos, correctedRot, transform);
+            mapMarker.name = marker.title;
             var mapPinManager = mapMarker.GetComponent<MapPinManager>();
             mapPinManager.setupPin(marker);
             Debug.Log(marker.title);

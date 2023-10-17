@@ -13,6 +13,7 @@ public class MapPinManager : MonoBehaviour
     private SpinFree spinner;
     public Material goodMat;
     public Material badMat;
+    public Material selectMat;
     private GlobeManager globeManager;
 
 

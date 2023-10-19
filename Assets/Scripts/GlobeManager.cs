@@ -45,10 +45,12 @@ public class GlobeManager : MonoBehaviour
     //public Slider spinSlider;
     //public Slider scaleSlider;
     //public GlobeBallController ballController;
+    private GlobeSync _globeSync;
 
     // Start is called before the first frame update
     void Start()
     {
+        _globeSync = gameObject.GetComponentInParent<GlobeSync>();
         globeMaterialRenderer = gameObject.GetComponent<Renderer>();
         videoPlayer = gameObject.GetComponent<VideoPlayer>();
         radius = gameObject.transform.localScale.x * 0.55f;
@@ -74,6 +76,7 @@ public class GlobeManager : MonoBehaviour
         }
         selectedMarker = markerList.markers[0];
         mapManager.setLatLong(selectedMarker.latitude, selectedMarker.longitude);
+        _globeSync.SetCurrMarkerTitle(selectedMarker.title);
     }
 
     // Update is called once per frame
@@ -100,6 +103,12 @@ public class GlobeManager : MonoBehaviour
     //        Debug.Log(Lines[i]);
     //    }
     //}
+
+    public void UpdateSelectedMarker(GlobeManager.Marker marker)
+    {
+        selectedMarker = marker;
+        _globeSync.SetCurrMarkerTitle(marker.title);
+    }
 
     public Quaternion AlignRotation(Vector3 markerPos)
     {

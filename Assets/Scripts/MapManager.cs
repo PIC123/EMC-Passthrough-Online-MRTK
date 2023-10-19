@@ -37,10 +37,12 @@ public class MapManager : MonoBehaviour
     private GlobeManager.Marker currMarker;
 
     private MapTableSync _mapTableSync;
+    private GlobeSync _globeSync;
 
     private void Awake()
     {
         _mapTableSync = GetComponent<MapTableSync>();
+        _globeSync = GameObject.Find("Globe Module").GetComponent<GlobeSync>();
     }
 
     // Start is called before the first frame update
@@ -59,6 +61,7 @@ public class MapManager : MonoBehaviour
         {
             water.SetActive(true);
             water.transform.position = new Vector3(water.transform.position.x, initialWaterHeight + (pinchSlider.SliderValue*0.1f), water.transform.position.z);
+            _mapTableSync.setWaterLevel(pinchSlider.SliderValue);
             //water.transform.position = new Vector3(water.transform.position.x, initialWaterHeight + waterSlider.value, water.transform.position.z);
         }
         else

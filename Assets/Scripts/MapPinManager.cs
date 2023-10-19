@@ -47,7 +47,7 @@ public class MapPinManager : MonoBehaviour
     {
         mapManager.setLatLong(markerData.latitude, markerData.longitude);
         Debug.Log($"going to {markerData.title}");
-        globeManager.selectedMarker = markerData;
+        globeManager.UpdateSelectedMarker(markerData);
     }
 
     public void toggleSpin(bool spinning)

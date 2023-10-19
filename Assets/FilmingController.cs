@@ -22,12 +22,17 @@ public class FilmingController : MonoBehaviour
     private GameObject[] mapPoints;
     private bool showPoints = true;
 
+    private MapTableSync _mapTableSync;
+
+
     // Start is called before the first frame update
     void Start()
     {
         startRot = globe.transform.eulerAngles;
         endRot = globe.transform.eulerAngles;
         mapPoints = GameObject.FindGameObjectsWithTag("data_point");
+        _mapTableSync = GameObject.Find("Map").GetComponent<MapTableSync>();
+
     }
 
     // Update is called once per frame
@@ -58,6 +63,7 @@ public class FilmingController : MonoBehaviour
         {
             print("particles");
             particles.SetActive(!particles.activeSelf);
+            _mapTableSync.setParticlesVisible(particles.activeSelf);
         }
         if (Input.GetKey("t"))
         {

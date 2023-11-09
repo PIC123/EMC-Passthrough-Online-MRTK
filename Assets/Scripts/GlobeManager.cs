@@ -41,25 +41,30 @@ public class GlobeManager : MonoBehaviour
     private VideoPlayer videoPlayer;
     public Marker selectedMarker;
     public MapManager mapManager;
+    public float dataPointOffset;
     //private SpinFree spinner;
     //public Slider spinSlider;
     //public Slider scaleSlider;
     //public GlobeBallController ballController;
     private GlobeSync _globeSync;
 
+    private Vector3 prevRot;
+
     // Start is called before the first frame update
     void Start()
     {
+        prevRot = transform.parent.eulerAngles;
         _globeSync = gameObject.GetComponentInParent<GlobeSync>();
         globeMaterialRenderer = gameObject.GetComponent<Renderer>();
         videoPlayer = gameObject.GetComponent<VideoPlayer>();
-        radius = gameObject.transform.localScale.x * 0.55f;
+        radius = gameObject.transform.localScale.x * dataPointOffset;
         //spinner = gameObject.GetComponent<SpinFree>();
         //radius = gameObject.transform.localScale.x / 1.75f;
         TextAsset txtAsset = (TextAsset)Resources.Load(fileName);
         markerList = JsonUtility.FromJson<MarkerList>(txtAsset.text);
         Debug.Log("test");
         Debug.Log(markerList.markers[0].title);
+        selectedMarker = markerList.markers[0];
         foreach (Marker marker in markerList.markers)
         {
             //Get correct position
@@ -74,7 +79,6 @@ public class GlobeManager : MonoBehaviour
             mapPinManager.setupPin(marker);
             Debug.Log(marker.title);
         }
-        selectedMarker = markerList.markers[0];
         mapManager.setLatLong(selectedMarker.latitude, selectedMarker.longitude);
         _globeSync.SetCurrMarkerTitle(selectedMarker.title);
     }
@@ -82,6 +86,12 @@ public class GlobeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(prevRot != transform.parent.eulerAngles)
+        {
+            Debug.Log("rotating");
+            _globeSync.SetGlobeRotation(transform.parent.eulerAngles);
+            prevRot = transform.parent.eulerAngles;
+        }
         //if (ballController.isGrabbed)
         //{
         //    spinner.spin = false;
@@ -139,6 +149,7 @@ public class GlobeManager : MonoBehaviour
     public void setGlobeMap(int mapType)
     {
         globeMaterialRenderer.material = globeMaterials[mapType];
+        _globeSync.SetGlobeLayer(mapType);
     }
 
     public void setGlobeAnimation(int mapType)

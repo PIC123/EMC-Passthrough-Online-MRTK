@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
+using UnityTemplateProjects;
 
 public class FilmingController : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class FilmingController : MonoBehaviour
     public SpinFree spinner;
     public Vector3 startRot;
     public Vector3 endRot;
+    private int currGlobeAnimation = 0;
 
     public float timeCount = 0.0f;
     private bool isMoving = false;
@@ -23,6 +25,7 @@ public class FilmingController : MonoBehaviour
     private bool showPoints = true;
 
     private MapTableSync _mapTableSync;
+    private GlobeSync _globeSync;
 
 
     // Start is called before the first frame update
@@ -32,6 +35,7 @@ public class FilmingController : MonoBehaviour
         endRot = globe.transform.eulerAngles;
         mapPoints = GameObject.FindGameObjectsWithTag("data_point");
         _mapTableSync = GameObject.Find("Map").GetComponent<MapTableSync>();
+        _globeSync = GameObject.Find("Globe Module").GetComponent<GlobeSync>();
 
     }
 
@@ -49,35 +53,24 @@ public class FilmingController : MonoBehaviour
             isMoving = false;
         }
 
-        if (Input.GetKey("z"))
+        if (Input.GetKey("z")) // Pan left
         {
             print("panning left");
             transform.Rotate(0, -rotationSpeed, 0);
         }
-        if (Input.GetKey("x"))
+        if (Input.GetKey("x")) // Pan right
         {
             print("panning right");
             transform.Rotate(0, rotationSpeed, 0);
         }
-        if (Input.GetKey("p"))
+        if (Input.GetKey("p")) // Toggle Particles
         {
             print("particles");
             particles.SetActive(!particles.activeSelf);
             _mapTableSync.setParticlesVisible(particles.activeSelf);
         }
-        if (Input.GetKey("t"))
+        if (Input.GetKey("1")) // Select location 1 (Tokyo)
         {
-            //var tempMarker = new GlobeManager.Marker
-            //{
-            //    title="Tokyo",
-            //    latitude=35.6895f,
-            //    longitude= 139.6917f,
-            //    co2= 25934,
-            //    ch4= 16,
-            //    n2o= 13,
-            //    h2o= 12304,
-            //    description= "Tokyo is an interesting place"
-            //};
             spinner.spin = false;
             var tpoint = GameObject.Find("Tokyo");
             var tmpm = tpoint.GetComponent<MapPinManager>();
@@ -85,7 +78,9 @@ public class FilmingController : MonoBehaviour
             var smpm = spoint.GetComponent<MapPinManager>();
             startRot = globe.transform.eulerAngles;
             endRot = new Vector3(0, 0, 0);
-            globeManager.selectedMarker = tmpm.markerData;
+            //globeManager.selectedMarker = tmpm.markerData;
+            globeManager.UpdateSelectedMarker(tmpm.markerData);
+            _globeSync.SetCurrMarkerTitle(tmpm.markerData.title);
             timeCount = 0;
             isMoving = true;
             //globe.transform.eulerAngles = endRot;
@@ -97,27 +92,18 @@ public class FilmingController : MonoBehaviour
             //mapManager.setLatLong(tempMarker.latitude, tempMarker.longitude);
             //mapManager.setText();
         }
-        if (Input.GetKey("s"))
+        if (Input.GetKey("2")) // Select location 2 (sf)
         {
             var spoint = GameObject.Find("San Francisco");
             var smpm = spoint.GetComponent<MapPinManager>();
             var tpoint = GameObject.Find("Tokyo");
             var tmpm = tpoint.GetComponent<MapPinManager>();
             spinner.spin = false;
-            //var tempMarker = new GlobeManager.Marker
-            //{
-            //    title="San Francisco",
-            //    latitude= 37.7749f,
-            //    longitude= -122.4194f,
-            //    co2= 34358,
-            //    ch4= 16,
-            //    n2o= 18,
-            //    h2o= 10456,
-            //    description= "SF is an interesting place"
-            //};
             startRot = globe.transform.eulerAngles;
             endRot = new Vector3(0, 101, 0);
-            globeManager.selectedMarker = smpm.markerData;
+            //globeManager.selectedMarker = smpm.markerData;
+            globeManager.UpdateSelectedMarker(smpm.markerData);
+            _globeSync.SetCurrMarkerTitle(smpm.markerData.title);
             timeCount = 0;
             isMoving = true;
             //globe.transform.eulerAngles = endRot;
@@ -129,15 +115,28 @@ public class FilmingController : MonoBehaviour
             //mapManager.setLatLong(tempMarker.latitude, tempMarker.longitude);
             //mapManager.setText();
         }
-        if (Input.GetKey("g"))
+        //if (Input.GetKey("l"))
+        //{
+        //    print("globe toggle");
+        //    globeVideo.enabled = !globeVideo.enabled;
+        //    showPoints = !showPoints;
+        //    foreach(GameObject data_point in mapPoints)
+        //    {
+        //        data_point.SetActive(showPoints);
+        //    }
+        //}
+        if (Input.GetKey("g")) // Change globe map
         {
-            print("globe toggle");
-            globeVideo.enabled = !globeVideo.enabled;
-            showPoints = !showPoints;
-            foreach(GameObject data_point in mapPoints)
-            {
-                data_point.SetActive(showPoints);
-            }
+            print("change globe map");
+            currGlobeAnimation = (currGlobeAnimation + 1) % globeManager.globeAnimationClips.Length;
+            _globeSync.SetGlobeLayer(currGlobeAnimation);
+            globeManager.setGlobeAnimation(currGlobeAnimation);
+        }
+
+        if (Input.GetKey("c")) // Toggle camera controls
+        {
+            gameObject.GetComponent<SimpleCameraController>().enabled = !gameObject.GetComponent<SimpleCameraController>().enabled;
+
         }
 
         //globe.transform.rotation = endRot;

@@ -9,13 +9,12 @@ public class MapTableSync : RealtimeComponent<MapTableSyncModel>
 {
     //private MapRenderer _mapRenderer;
     private MapManager _mapManager;
-    private GlobeManager _globeManager;
 
     private void Awake()
     {
         //_mapRenderer = GetComponent<MapRenderer>();
-        _mapManager = GetComponent<MapManager>();
-        _globeManager = GameObject.Find("Globe").GetComponent<GlobeManager>();
+        _mapManager = gameObject.GetComponent<MapManager>();
+        Debug.Log("map manager set");
     }
     // Start is called before the first frame update
     void Start()
@@ -39,6 +38,7 @@ public class MapTableSync : RealtimeComponent<MapTableSyncModel>
             previousModel.zoomLevelDidChange -= ZoomDidChange;
             previousModel.waterHeightDidChange -= WaterLevelDidChange;
             previousModel.particlesVisibleDidChange -= ParticlesVisibleDidChange;
+            Debug.Log("unset prev model");
         }
 
         if (currentModel != null)
@@ -50,6 +50,7 @@ public class MapTableSync : RealtimeComponent<MapTableSyncModel>
                 currentModel.zoomLevel = _mapManager.mapRenderer.ZoomLevel;
                 currentModel.waterHeight = _mapManager.waterLevel;
                 currentModel.particlesVisible = _mapManager.particles.gameObject.activeSelf;
+            Debug.Log("Set current model");
 
             // Update the mesh render to match the new model
             UpdateLat();
@@ -57,6 +58,7 @@ public class MapTableSync : RealtimeComponent<MapTableSyncModel>
             UpdateZoom();
             UpdateWaterLevel();
             UpdateParticlesVisible();
+            Debug.Log("model updated");
 
             // Register for events so we'll know if the color changes later
             currentModel.latitudeDidChange += LatDidChange;
@@ -64,6 +66,7 @@ public class MapTableSync : RealtimeComponent<MapTableSyncModel>
             currentModel.zoomLevelDidChange += ZoomDidChange;
             currentModel.waterHeightDidChange += WaterLevelDidChange;
             currentModel.particlesVisibleDidChange += ParticlesVisibleDidChange;
+            Debug.Log("set curr model");
         }
     }
 
@@ -82,7 +85,7 @@ public class MapTableSync : RealtimeComponent<MapTableSyncModel>
     private void ZoomDidChange(MapTableSyncModel model, float zoom)
     {
         // Update the mesh renderer
-        UpdateLat();
+        UpdateZoom();
     }
 
     private void WaterLevelDidChange(MapTableSyncModel model, float waterLevel)
@@ -100,12 +103,14 @@ public class MapTableSync : RealtimeComponent<MapTableSyncModel>
     private void UpdateLat()
     {
         _mapManager.setLatLong(model.latitude, model.longitude);
+        //_mapManager.setText();
         //_mapRenderer.Center = new LatLon(model.latitude, model.longitude);
     }
 
     private void UpdateLong()
     {
         _mapManager.setLatLong(model.latitude, model.longitude);
+        //_mapManager.setText();
         //_mapRenderer.Center = new LatLon(model.latitude, model.longitude);
     }
 
@@ -117,7 +122,7 @@ public class MapTableSync : RealtimeComponent<MapTableSyncModel>
 
     private void UpdateWaterLevel()
     {
-        _mapManager.pinchSlider.SliderValue = model.waterHeight;
+        _mapManager.waterSlider.SliderValue = model.waterHeight;
     }
 
     private void UpdateParticlesVisible()

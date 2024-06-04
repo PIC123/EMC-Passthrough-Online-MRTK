@@ -27,6 +27,7 @@ public class GlobeManager : MonoBehaviour
         public float ch4;
         public float n2o;
         public float h2o;
+        public string imgURL;
     }
 
     public GameObject markerPrefab;
@@ -50,9 +51,12 @@ public class GlobeManager : MonoBehaviour
 
     private Vector3 prevRot;
 
+    public GameObject envSphere;
+
     // Start is called before the first frame update
     void Start()
     {
+        //envSphere = GameObject.Find("360 Image Env");
         prevRot = transform.parent.eulerAngles;
         _globeSync = gameObject.GetComponentInParent<GlobeSync>();
         globeMaterialRenderer = gameObject.GetComponent<Renderer>();
@@ -64,7 +68,6 @@ public class GlobeManager : MonoBehaviour
         markerList = JsonUtility.FromJson<MarkerList>(txtAsset.text);
         Debug.Log("test");
         Debug.Log(markerList.markers[0].title);
-        selectedMarker = markerList.markers[0];
         foreach (Marker marker in markerList.markers)
         {
             //Get correct position
@@ -79,6 +82,7 @@ public class GlobeManager : MonoBehaviour
             mapPinManager.setupPin(marker);
             Debug.Log(marker.title);
         }
+        UpdateSelectedMarker(markerList.markers[0]);
         mapManager.setLatLong(selectedMarker.latitude, selectedMarker.longitude);
         _globeSync.SetCurrMarkerTitle(selectedMarker.title);
     }
@@ -88,7 +92,7 @@ public class GlobeManager : MonoBehaviour
     {
         if(prevRot != transform.parent.eulerAngles)
         {
-            Debug.Log("rotating");
+            //Debug.Log("rotating");
             _globeSync.SetGlobeRotation(transform.parent.eulerAngles);
             prevRot = transform.parent.eulerAngles;
         }
@@ -118,6 +122,23 @@ public class GlobeManager : MonoBehaviour
     {
         selectedMarker = marker;
         _globeSync.SetCurrMarkerTitle(marker.title);
+        //Debug.Log($"Setting 360 texture from {selectedMarker.imgURL}");
+        //StartCoroutine(envSphere.GetComponent<SetEnvImg>().SetTexture(selectedMarker.imgURL));
+        switch (marker.title)
+        {
+            case "Galveston":
+                envSphere.GetComponent<SetEnvImg>().SetMaterial(1);
+                Debug.Log("Setting Galveston img");
+                break;
+            case "Honolulu":
+                envSphere.GetComponent<SetEnvImg>().SetMaterial(2);
+                Debug.Log("Setting Honolulu img");
+                break;
+            default:
+                envSphere.GetComponent<SetEnvImg>().SetMaterial(0);
+                Debug.Log("Setting Cambridge img");
+                break;
+        }
     }
 
     public Quaternion AlignRotation(Vector3 markerPos)

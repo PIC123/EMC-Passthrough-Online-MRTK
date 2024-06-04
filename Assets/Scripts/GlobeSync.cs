@@ -92,7 +92,7 @@ public class GlobeSync : RealtimeComponent<GlobeSyncModel>
     private void UpdateGlobeRotation()
     {
         globe.transform.eulerAngles = model.globeRoration;
-        Debug.Log("Rotated");
+        //Debug.Log("Rotated");
     }
 
     public void SetCurrMarkerTitle(string title)

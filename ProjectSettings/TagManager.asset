@@ -10,6 +10,7 @@ TagManager:
   - lb_groundTarget
   - hyperwall
   - data_point
+  - EnvObj
   layers:
   - Default
   - TransparentFX

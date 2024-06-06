@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: pcherner
-  productName: EarthMissionControl-Online-test
+  productName: EarthMissionControl-Location-Sync-test
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -134,9 +134,12 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.6.0
+  bundleVersion: 0.7.0
   preloadedAssets:
   - {fileID: 11400000, guid: 135aad4040821c9458206f0b1c8adbc8, type: 2}
+  - {fileID: 11400000, guid: b1a734d715cea0043bf356a4c3fc51f0, type: 2}
+  - {fileID: 8109543880677260987, guid: 2354e1c4f6340394394720adab854acc, type: 2}
+  - {fileID: -7596682605896214142, guid: 3aefadd658664d84c8bc64a6c8425f76, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -155,13 +158,13 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.pcherner.EarthMissionControlOnlinetest
+    Android: com.pcherner.EarthMissionControlLocationSynctest
     Standalone: com.pcherner.EarthMissionControl-Online-test
   buildNumber:
     Standalone: 0
     iPhone: 0
     tvOS: 0
-  overrideDefaultApplicationIdentifier: 0
+  overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 29
   AndroidTargetSdkVersion: 0

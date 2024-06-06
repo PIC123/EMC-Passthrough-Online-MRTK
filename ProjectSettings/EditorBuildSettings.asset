@@ -20,8 +20,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Samples/MRTKExamples/2.5.1/HandMenuLayout/Scenes/HandMenuLayoutExamples.unity
     guid: 9e1c6bf44fb90c54dbf82acf2808c16f
-  - enabled: 0
-    path: Assets/Scenes/EMC-layout-test.unity
+  - enabled: 1
+    path: Assets/Scenes/EMC-VR-layout1.unity
     guid: 11547e450c7e3c64eb7dbff3b9df1e95
   - enabled: 0
     path: Assets/Scenes/EMC-passthrough-test.unity
@@ -29,9 +29,12 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/EMC-layout-test-filming.unity
+  - enabled: 0
+    path: Assets/Scenes/EMC-desktop-layout1.unity
     guid: 7d4ca24fc6b259a4ca3799e56ff8d2a7
+  - enabled: 0
+    path: Assets/Scenes/NormcoreTest.unity
+    guid: 7067065a160f3b047bd02f33c3e038b1
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b1a734d715cea0043bf356a4c3fc51f0,
       type: 2}

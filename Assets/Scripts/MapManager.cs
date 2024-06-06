@@ -48,6 +48,7 @@ public class MapManager : MonoBehaviour
     {
         _mapTableSync = GetComponent<MapTableSync>();
         _globeSync = GameObject.Find("Globe Module").GetComponent<GlobeSync>();
+        currMarker = globeManager.selectedMarker;
     }
 
     // Start is called before the first frame update

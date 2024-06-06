@@ -21,16 +21,23 @@ public class EnvironmentManager : MonoBehaviour
     // Variables for 360 env toggle
     public GameObject envSphere;
     private GameObject[] envObjects;
-    private bool showSphere = false;
+    public bool showSphere = false;
 
     public GameObject particles;
     public bool showParticles = false;
+
+    private EnvSync envSync;
+
+    private void Awake()
+    {
+        envObjects = GameObject.FindGameObjectsWithTag("EnvObj");
+        envSync = GetComponent<EnvSync>();
+    }
 
     void Start()
     {
         initialWaterHeight = water.transform.position.y;
         tooltips = GameObject.FindGameObjectsWithTag("Tooltip");
-        envObjects = GameObject.FindGameObjectsWithTag("EnvObj");
     }
 
     // Update is called once per frame
@@ -70,6 +77,7 @@ public class EnvironmentManager : MonoBehaviour
         {
             envObj.SetActive(!showSphere);
         }
+        envSync.setSphereState(showSphere);
     }
 
     public void toggleParticles()

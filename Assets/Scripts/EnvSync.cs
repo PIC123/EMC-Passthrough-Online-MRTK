@@ -15,6 +15,7 @@ public class EnvSync : RealtimeComponent<EnvSyncModel>
     private void UpdateEnvMode()
     {
         envManager.showSphere = model.sphereEnabled;
+        envManager.set360Env(model.sphereEnabled);
     }
 
     private void EnvModeDidChange(EnvSyncModel model, bool sphereEnabled)

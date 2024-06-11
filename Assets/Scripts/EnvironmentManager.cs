@@ -68,16 +68,21 @@ public class EnvironmentManager : MonoBehaviour
     public void toggle360Env()
     {
         showSphere = !showSphere;
-        envSphere.SetActive(showSphere);
+        set360Env(showSphere);
+        envSync.setSphereState(showSphere);
+    }
+
+    public void set360Env(bool show360)
+    {
+        envSphere.SetActive(show360);
         //if (showSphere)
         //{
         //    StartCoroutine(SetTexture());
         //}
-        foreach(GameObject envObj in envObjects)
+        foreach (GameObject envObj in envObjects)
         {
-            envObj.SetActive(!showSphere);
+            envObj.SetActive(!show360);
         }
-        envSync.setSphereState(showSphere);
     }
 
     public void toggleParticles()

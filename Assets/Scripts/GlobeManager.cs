@@ -27,6 +27,7 @@ public class GlobeManager : MonoBehaviour
         public float ch4;
         public float n2o;
         public float h2o;
+        public string imgURL;
     }
 
     public GameObject markerPrefab;
@@ -41,17 +42,26 @@ public class GlobeManager : MonoBehaviour
     private VideoPlayer videoPlayer;
     public Marker selectedMarker;
     public MapManager mapManager;
+    public float dataPointOffset;
     //private SpinFree spinner;
     //public Slider spinSlider;
     //public Slider scaleSlider;
     //public GlobeBallController ballController;
+    private GlobeSync _globeSync;
+
+    private Vector3 prevRot;
+
+    public GameObject envSphere;
 
     // Start is called before the first frame update
     void Start()
     {
+        //envSphere = GameObject.Find("360 Image Env");
+        prevRot = transform.parent.eulerAngles;
+        _globeSync = gameObject.GetComponentInParent<GlobeSync>();
         globeMaterialRenderer = gameObject.GetComponent<Renderer>();
         videoPlayer = gameObject.GetComponent<VideoPlayer>();
-        radius = gameObject.transform.localScale.x * 0.55f;
+        radius = gameObject.transform.localScale.x * dataPointOffset;
         //spinner = gameObject.GetComponent<SpinFree>();
         //radius = gameObject.transform.localScale.x / 1.75f;
         TextAsset txtAsset = (TextAsset)Resources.Load(fileName);
@@ -67,17 +77,25 @@ public class GlobeManager : MonoBehaviour
             var correctedRot = AlignRotation(correctedPos);
             // Instantiate marker
             var mapMarker = Instantiate(markerPrefab, correctedPos, correctedRot, transform);
+            mapMarker.name = marker.title;
             var mapPinManager = mapMarker.GetComponent<MapPinManager>();
             mapPinManager.setupPin(marker);
             Debug.Log(marker.title);
         }
-        selectedMarker = markerList.markers[0];
+        UpdateSelectedMarker(markerList.markers[0]);
         mapManager.setLatLong(selectedMarker.latitude, selectedMarker.longitude);
+        _globeSync.SetCurrMarkerTitle(selectedMarker.title);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(prevRot != transform.parent.eulerAngles)
+        {
+            //Debug.Log("rotating");
+            _globeSync.SetGlobeRotation(transform.parent.eulerAngles);
+            prevRot = transform.parent.eulerAngles;
+        }
         //if (ballController.isGrabbed)
         //{
         //    spinner.spin = false;
@@ -99,6 +117,29 @@ public class GlobeManager : MonoBehaviour
     //        Debug.Log(Lines[i]);
     //    }
     //}
+
+    public void UpdateSelectedMarker(GlobeManager.Marker marker)
+    {
+        selectedMarker = marker;
+        _globeSync.SetCurrMarkerTitle(marker.title);
+        //Debug.Log($"Setting 360 texture from {selectedMarker.imgURL}");
+        //StartCoroutine(envSphere.GetComponent<SetEnvImg>().SetTexture(selectedMarker.imgURL));
+        switch (marker.title)
+        {
+            case "Galveston":
+                envSphere.GetComponent<SetEnvImg>().SetMaterial(1);
+                Debug.Log("Setting Galveston img");
+                break;
+            case "Honolulu":
+                envSphere.GetComponent<SetEnvImg>().SetMaterial(2);
+                Debug.Log("Setting Honolulu img");
+                break;
+            default:
+                envSphere.GetComponent<SetEnvImg>().SetMaterial(0);
+                Debug.Log("Setting Cambridge img");
+                break;
+        }
+    }
 
     public Quaternion AlignRotation(Vector3 markerPos)
     {
@@ -129,6 +170,7 @@ public class GlobeManager : MonoBehaviour
     public void setGlobeMap(int mapType)
     {
         globeMaterialRenderer.material = globeMaterials[mapType];
+        _globeSync.SetGlobeLayer(mapType);
     }
 
     public void setGlobeAnimation(int mapType)

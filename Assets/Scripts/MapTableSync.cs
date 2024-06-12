@@ -13,7 +13,8 @@ public class MapTableSync : RealtimeComponent<MapTableSyncModel>
     private void Awake()
     {
         //_mapRenderer = GetComponent<MapRenderer>();
-        _mapManager = GetComponent<MapManager>();
+        _mapManager = gameObject.GetComponent<MapManager>();
+        Debug.Log("map manager set");
     }
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,9 @@ public class MapTableSync : RealtimeComponent<MapTableSyncModel>
             previousModel.latitudeDidChange -= LatDidChange;
             previousModel.longitudeDidChange -= LongDidChange;
             previousModel.zoomLevelDidChange -= ZoomDidChange;
+            previousModel.waterHeightDidChange -= WaterLevelDidChange;
+            previousModel.particlesVisibleDidChange -= ParticlesVisibleDidChange;
+            Debug.Log("unset prev model");
         }
 
         if (currentModel != null)
@@ -44,16 +48,25 @@ public class MapTableSync : RealtimeComponent<MapTableSyncModel>
                 currentModel.latitude = _mapManager.mapRenderer.Center.LatitudeInDegrees;
                 currentModel.longitude = _mapManager.mapRenderer.Center.LongitudeInDegrees;
                 currentModel.zoomLevel = _mapManager.mapRenderer.ZoomLevel;
+                currentModel.waterHeight = _mapManager.waterLevel;
+                currentModel.particlesVisible = _mapManager.particles.gameObject.activeSelf;
+            Debug.Log("Set current model");
 
             // Update the mesh render to match the new model
             UpdateLat();
             UpdateLong();
             UpdateZoom();
+            UpdateWaterLevel();
+            UpdateParticlesVisible();
+            Debug.Log("model updated");
 
             // Register for events so we'll know if the color changes later
-            previousModel.latitudeDidChange += LatDidChange;
-            previousModel.longitudeDidChange += LongDidChange;
-            previousModel.zoomLevelDidChange += ZoomDidChange;
+            currentModel.latitudeDidChange += LatDidChange;
+            currentModel.longitudeDidChange += LongDidChange;
+            currentModel.zoomLevelDidChange += ZoomDidChange;
+            currentModel.waterHeightDidChange += WaterLevelDidChange;
+            currentModel.particlesVisibleDidChange += ParticlesVisibleDidChange;
+            Debug.Log("set curr model");
         }
     }
 
@@ -72,18 +85,32 @@ public class MapTableSync : RealtimeComponent<MapTableSyncModel>
     private void ZoomDidChange(MapTableSyncModel model, float zoom)
     {
         // Update the mesh renderer
-        UpdateLat();
+        UpdateZoom();
+    }
+
+    private void WaterLevelDidChange(MapTableSyncModel model, float waterLevel)
+    {
+        // Update the mesh renderer
+        UpdateWaterLevel();
+    }
+
+    private void ParticlesVisibleDidChange(MapTableSyncModel model, bool particlesVisible)
+    {
+        // Update the mesh renderer
+        UpdateParticlesVisible();
     }
 
     private void UpdateLat()
     {
         _mapManager.setLatLong(model.latitude, model.longitude);
+        //_mapManager.setText();
         //_mapRenderer.Center = new LatLon(model.latitude, model.longitude);
     }
 
     private void UpdateLong()
     {
         _mapManager.setLatLong(model.latitude, model.longitude);
+        //_mapManager.setText();
         //_mapRenderer.Center = new LatLon(model.latitude, model.longitude);
     }
 
@@ -91,6 +118,16 @@ public class MapTableSync : RealtimeComponent<MapTableSyncModel>
     {
         _mapManager.setZoom(model.zoomLevel);
         //_mapRenderer.ZoomLevel = model.zoomLevel;
+    }
+
+    private void UpdateWaterLevel()
+    {
+        _mapManager.waterSlider.SliderValue = model.waterHeight;
+    }
+
+    private void UpdateParticlesVisible()
+    {
+        _mapManager.particles.gameObject.SetActive(model.particlesVisible);
     }
 
     public void setLat(double latitude)
@@ -106,5 +143,15 @@ public class MapTableSync : RealtimeComponent<MapTableSyncModel>
     public void setZoom(float zoomLevel)
     {
         model.zoomLevel = zoomLevel;
+    }
+
+    public void setWaterLevel(float waterLevel)
+    {
+        model.waterHeight = waterLevel;
+    }
+
+    public void setParticlesVisible(bool particlesVisible)
+    {
+        model.particlesVisible = particlesVisible;
     }
 }

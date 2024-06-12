@@ -1,0 +1,41 @@
+[33mcommit 6f554beb6686161392fc8f6b2c5880f9d44f150c[m[33m ([m[1;36mHEAD -> [m[1;32mfilming[m[33m)[m
+Author: Phil Cherner <pcherner@mit.edu>
+Date:   Fri Oct 20 13:12:31 2023 -0400
+
+    Updating scene
+
+[33mcommit 02a4fa731a49ff19cce55444f7cbb93311bb382a[m[33m ([m[1;31morigin/filming[m[33m)[m
+Author: Phil Cherner <pcherner@mit.edu>
+Date:   Thu Oct 19 02:42:21 2023 -0400
+
+    Fixed map sync and adding globe sync
+
+[33mcommit dea749f3ebd83a080c09425252ea34fafea1dab5[m
+Author: Phil Cherner <pcherner@mit.edu>
+Date:   Mon Oct 16 23:18:39 2023 -0400
+
+    Added filiming tools
+
+[33mcommit 7bb0fbb7c9087131f736f47374cc2cd75a8b50fb[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Phil Cherner <pcherner@mit.edu>
+Date:   Sun Oct 15 21:55:19 2023 -0400
+
+    Fixing sync issues
+
+[33mcommit 1dd04328cc2359dae372cf0d4151c814477d23c7[m
+Author: Phil Cherner <pcherner@mit.edu>
+Date:   Mon Oct 9 16:22:05 2023 -0400
+
+    Updating layout
+
+[33mcommit 6dae14f07637299bfca3242b1eb5652f0dae9039[m
+Author: Phil Cherner <pcherner@mit.edu>
+Date:   Mon Oct 2 17:10:29 2023 -0400
+
+    Fixing control panel, add 360 controls
+
+[33mcommit 1ed3aa65a8f089a8232b12d895ac31bd066886c2[m
+Author: Phil Cherner <pcherner@mit.edu>
+Date:   Wed Jul 26 16:13:57 2023 -0400
+
+    initial port

@@ -1,0 +1,65 @@
+{
+    "markers": [{
+        "longitude": -71.0872,
+        "latitude": 42.3605,
+        "title": "Cambridge",
+        "co2": 29358,
+        "ch4": 14,
+        "n2o": 16,
+        "h2o": 10760,
+        "description": "Cambridge is an interesting place",
+        "imgURL": "https://earthmissioncontrolsa.blob.core.windows.net/360-env-images/honolulu-360-0.jpg"
+    },{
+        "title": "Houston",
+        "latitude": 29.7604,
+        "longitude": -95.3698,
+        "co2": 30358,
+        "ch4": 15,
+        "n2o": 17,
+        "h2o": 10987,
+        "description": "Houston is an interesting place",
+        "imgURL": "https://earthmissioncontrolsa.blob.core.windows.net/360-env-images/honolulu-360-0.jpg"
+
+    },{
+        "title": "Galveston",
+        "latitude": 29.3013,
+        "longitude": -94.7977,
+        "co2": 31358,
+        "ch4": 16,
+        "n2o": 18,
+        "h2o": 10456,
+        "description": "Galveston is an interesting place",
+        "imgURL": "https://earthmissioncontrolsa.blob.core.windows.net/360-env-images/honolulu-360-0.jpg"
+    },{
+        "title": "Honolulu",
+        "latitude": 21.3069,
+        "longitude": -157.8583,
+        "co2": 31358,
+        "ch4": 16,
+        "n2o": 18,
+        "h2o": 10456,
+        "description": "Honolulu is an interesting place",
+        "imgURL": "https://earthmissioncontrolsa.blob.core.windows.net/360-env-images/honolulu-360-0.jpg"
+    },{
+        "title": "New York",
+        "latitude": 40.7128,
+        "longitude": -74.0059,
+        "co2": 33358,
+        "ch4": 15,
+        "n2o": 17,
+        "h2o": 11987,
+        "description": "NY is an interesting place",
+        "imgURL": "https://earthmissioncontrolsa.blob.core.windows.net/360-env-images/honolulu-360-0.jpg"
+    },
+    {
+        "title": "Sydney",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "co2": 23871,
+        "ch4": 11,
+        "n2o": 21,
+        "h2o": 11345,
+        "description": "Sydney is an interesting place",
+        "imgURL": "https://earthmissioncontrolsa.blob.core.windows.net/360-env-images/honolulu-360-0.jpg"
+    }]
+}

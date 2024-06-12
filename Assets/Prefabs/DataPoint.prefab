@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 7930283440481931408}
   m_Layer: 0
   m_Name: DataPoint
-  m_TagString: Untagged
+  m_TagString: data_point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 5008624627721370713}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -16.67, y: 3.87, z: 26.99}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -130,6 +130,7 @@ MonoBehaviour:
   overviewText: {fileID: 0}
   goodMat: {fileID: 2100000, guid: 6bcf3c63b4aeb2143968eca1ab29779d, type: 2}
   badMat: {fileID: 2100000, guid: e40ef1d4cbe0a314780756a5ae64e8eb, type: 2}
+  selectMat: {fileID: 2100000, guid: 514eebd3a8dff0e49b898a67948fa3d7, type: 2}
 --- !u!114 &-4153790611268772470
 MonoBehaviour:
   m_ObjectHideFlags: 0

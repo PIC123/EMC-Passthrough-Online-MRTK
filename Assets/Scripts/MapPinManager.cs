@@ -13,7 +13,9 @@ public class MapPinManager : MonoBehaviour
     private SpinFree spinner;
     public Material goodMat;
     public Material badMat;
+    public Material selectMat;
     private GlobeManager globeManager;
+    private GlobeSync _globeSync;
 
 
 
@@ -22,7 +24,8 @@ public class MapPinManager : MonoBehaviour
     {
         mapManager = GameObject.FindGameObjectsWithTag("MapTable")[0].GetComponent<MapManager>();
         spinner = gameObject.GetComponentInParent<SpinFree>();
-        globeManager = gameObject.GetComponentInParent<GlobeManager>();
+        globeManager = GameObject.Find("Globe").GetComponentInParent<GlobeManager>();
+        _globeSync = GameObject.Find("Globe Module").GetComponent<GlobeSync>();
     }
 
     // Update is called once per frame
@@ -46,7 +49,8 @@ public class MapPinManager : MonoBehaviour
     {
         mapManager.setLatLong(markerData.latitude, markerData.longitude);
         Debug.Log($"going to {markerData.title}");
-        globeManager.selectedMarker = markerData;
+        globeManager.UpdateSelectedMarker(markerData);
+        _globeSync.SetCurrMarkerTitle(markerData.title);
     }
 
     public void toggleSpin(bool spinning)

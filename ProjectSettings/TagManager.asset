@@ -11,6 +11,9 @@ TagManager:
   - hyperwall
   - data_point
   - EnvObj
+  - panel
+  - PanelOptn
+  - content
   layers:
   - Default
   - TransparentFX

@@ -1,3 +1,4 @@
+using Microsoft.MixedReality.Toolkit.UI;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -5,50 +6,49 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using UnityEngine.Video;
+using static UnityEngine.Rendering.DebugUI;
 
-public class HyperwallManager : MonoBehaviour  
+public class HyperwallManager : MonoBehaviour
 {
-    
-    // Initiate all global variables
-    public VideoClip earthVideo;
-    public VideoClip warmingVideo;
-    public Texture warmingImage;
-    public GameObject Panel1x2;
-    public GameObject Panel2x2;
-    public GameObject Panel;
-    private string startPanel;
-    private string newPanel1;
-    private string newPanel2;
-    private string newPanel3;
-    private string newPanel4; 
-    private bool Hyperwall1 = false;
-    private bool Hyperwall2 = false;
-    private bool isToggle1 = false;
-    private bool isToggle2 = false;
-    private bool isToggle3 = false;
-    private bool isToggle4 = false;
-    private bool? isImageVisible;
+
+    public int selectedHyperwall = -1;
+    public int selectedPanel = -1;
+    public VideoClip[] Clips;
+    public Texture[] Images;
+    public GameObject[] togglePanels;
     private VideoPlayer videoPlayer;
-    private Texture sceneImage;
-
-
-
-    //public bool isMapOpen = false;
-    //public GameObject contents;
-    //public GameObject mapContainer;
-
+    private GameObject[] hyperWalls;
+    private List<List<GameObject>> allPanelList;
 
     // Start is called before the first frame update
     void Start()
     {
-        startPanel = "TestPanel";
-        isImageVisible = null;
+        allPanelList = new List<List<GameObject>>();
+        hyperWalls = GameObject.FindGameObjectsWithTag("hyperwall");
 
+        // Iterate through each parent object
+        foreach (GameObject hyperWall in hyperWalls)
+        {
+            // Create a new list to store child panels of the current parent
+            List<GameObject> panelList = new List<GameObject>();
 
+            foreach (Transform child in hyperWall.transform)
+            {
+                // Iterate through grandchildren, since child of hyperwall is "content"
+                foreach (Transform grandChild in child)
+                {
+                    if (grandChild.CompareTag("panel"))
+                    {
+                        panelList.Add(grandChild.gameObject);
+                    }
+                }
+            }
+            allPanelList.Add(panelList);
+        }
     }
 
 
-    
+
     // Update is called once per frame
     void Update()
     {
@@ -64,250 +64,50 @@ public class HyperwallManager : MonoBehaviour
         //    contents.SetActive(true);
         //}
 
-        
-        if (isImageVisible == false)
-        {
-            videoPlayer.enabled = true;
-        }
-        else if (isImageVisible == true) 
-        {
-            videoPlayer.enabled = false;
-        }
-        else 
-        {
-        // Do nothing
-        }
-      
     }
 
-    public void toggleHW1() 
+    public void selectDash(int selectedWall)
     {
+        selectedHyperwall = selectedWall;
 
-        Hyperwall1 = true;
-        Hyperwall2 = false;
-        Panel1x2.SetActive(true);
-        Panel2x2.SetActive(false);
-    
-    }
-
-    public void toggleHW2() 
-    {
-    
-        Hyperwall2= true;
-        Hyperwall1= false;
-        Panel1x2.SetActive(false);
-        Panel2x2.SetActive(true);
-
-
-    }
-    public void toggleOne()
-    {
-        if (Hyperwall1)
+        // Toggles to enable and disable panel buttons based on which Hyperwall is chose to be edited
+        for (int i = 0; i < togglePanels.Length; i++)
         {
-            isToggle1 = true;
-            isToggle2 = false;
-            isToggle3 = false;
-            isToggle4 = false;
-            if (isToggle1)
+            if (i == selectedHyperwall)
             {
-                newPanel1 = startPanel + "1";
+                togglePanels[i].SetActive(true);
+            }
+            else
+            {
+                togglePanels[i].SetActive(false);
             }
         }
-        else if (Hyperwall2) 
-        {
 
-            isToggle1 = true;
-            isToggle2 = false;
-            isToggle3 = false;
-            isToggle4 = false;
-            if (isToggle1)
-            {
-                newPanel1 = startPanel + "1N";
-            }
-
-        }
 
     }
 
-    public void toggleTwo()
+    public void selectPanel(int selectedPan)
     {
-        if (Hyperwall1)
-        {
-            isToggle1 = false;
-            isToggle2 = true;
-            isToggle3 = false;
-            isToggle4 = false;
-            if (isToggle2)
-            {
-                newPanel2 = startPanel + "2";
-            }
-        }
-        else if (Hyperwall2)
-        {
-
-            isToggle1 = false;
-            isToggle2 = true;
-            isToggle3 = false;
-            isToggle4 = false;
-            if (isToggle2)
-            {
-                newPanel2 = startPanel + "2N";
-            }
-
-        }
-
+        selectedPanel = selectedPan;
     }
 
-    public void toggleThree()
+    public void selectVid(int clipInd)
     {
-        if (Hyperwall2)
-        {
-            isToggle2 = false;
-            isToggle1 = false;
-            isToggle3 = true;
-            isToggle4 = false;
-            if (isToggle3)
-            {
-                newPanel3 = startPanel + "3N";
-            }
-        }
-        else 
-        {
-        // Do nothing
-        }
+
+        GameObject selectedPanelObject = allPanelList[selectedHyperwall][selectedPanel];
+        VideoPlayer panelVideoPlayer = selectedPanelObject.GetComponent<VideoPlayer>();
+        panelVideoPlayer.clip = Clips[clipInd];
+        videoPlayer.Play();
 
     }
 
-    public void toggleFour()
+    public void selectImg(int imgInd)
     {
-        if (Hyperwall2)
-        {
-            isToggle2 = false;
-            isToggle1 = false;
-            isToggle3 = false;
-            isToggle4 = true;
-            if (isToggle4)
-            {
-                newPanel4 = startPanel + "4N";
-            }
-        }
-        else 
-        {
-        // Do nothing
-        }
-
+        GameObject selectedPanelObject = allPanelList[selectedHyperwall][selectedPanel];
+        Renderer renderer = selectedPanelObject.GetComponent<Renderer>();
+        renderer.material.mainTexture = Images[imgInd];
+        VideoPlayer panelVideoPlayer = selectedPanelObject.GetComponent<VideoPlayer>();
+        panelVideoPlayer.clip = null;
     }
 
-    public void EarthVid()
-    {
-        isImageVisible= false;
-        if (isToggle1)
-        {
-            Panel = GameObject.Find(newPanel1);
-            videoPlayer = Panel.GetComponent<VideoPlayer>();
-            videoPlayer.clip = earthVideo;
-            videoPlayer.Play();
-        }
-
-        if (isToggle2)
-        {
-            Panel = GameObject.Find(newPanel2);
-            videoPlayer = Panel.GetComponent<VideoPlayer>();
-            videoPlayer.clip = earthVideo;
-            videoPlayer.Play();
-        }
-
-        if (isToggle3)
-        {
-            Panel = GameObject.Find(newPanel3);
-            videoPlayer = Panel.GetComponent<VideoPlayer>();
-            videoPlayer.clip = earthVideo;
-            videoPlayer.Play();
-        }
-
-        if (isToggle4)
-        {
-            Panel = GameObject.Find(newPanel4);
-            videoPlayer = Panel.GetComponent<VideoPlayer>();
-            videoPlayer.clip = earthVideo;
-            videoPlayer.Play();
-        }
-
-    }
-
-    public void WarmingVid()
-    {
-        isImageVisible = false;
-        if (isToggle1)
-        {
-            Panel = GameObject.Find(newPanel1);
-            videoPlayer = Panel.GetComponent<VideoPlayer>();
-            videoPlayer.clip = warmingVideo;
-            videoPlayer.Play();
-        }
-
-        if (isToggle2)
-        {
-            Panel = GameObject.Find(newPanel2);
-            videoPlayer = Panel.GetComponent<VideoPlayer>();
-            videoPlayer.clip = warmingVideo;
-            videoPlayer.Play();
-        }
-
-        if (isToggle3)
-        {
-            Panel = GameObject.Find(newPanel3);
-            videoPlayer = Panel.GetComponent<VideoPlayer>();
-            videoPlayer.clip = warmingVideo;
-            videoPlayer.Play();
-        }
-
-        if (isToggle4)
-        {
-            Panel = GameObject.Find(newPanel4);
-            videoPlayer = Panel.GetComponent<VideoPlayer>();
-            videoPlayer.clip = warmingVideo;
-            videoPlayer.Play();
-        }
-
-    }
-
-    public void WarmingImage() 
-    {
-        isImageVisible = true;
-        if (isToggle1)
-        {
-            Panel = GameObject.Find(newPanel1);
-            Renderer renderer = Panel.GetComponent<Renderer>();
-            renderer.material.mainTexture = warmingImage;
-        }
-
-        if (isToggle2)
-        {
-            Panel = GameObject.Find(newPanel2);
-            Renderer renderer = Panel.GetComponent<Renderer>();
-            renderer.material.mainTexture = warmingImage;
-        }
-
-        if (isToggle3)
-        {
-            Panel = GameObject.Find(newPanel3);
-            Renderer renderer = Panel.GetComponent<Renderer>();
-            renderer.material.mainTexture = warmingImage;
-        }
-
-        if (isToggle4)
-        {
-            Panel = GameObject.Find(newPanel4);
-            Renderer renderer = Panel.GetComponent<Renderer>();
-            renderer.material.mainTexture = warmingImage;
-        }
-
-    }
-
-
-    //public void toggleMap()
-    //{
-    //    isMapOpen = !isMapOpen;
-    //}
 }

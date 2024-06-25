@@ -7,12 +7,12 @@ using UnityTemplateProjects;
 public class FilmingController : MonoBehaviour
 {
     public float rotationSpeed = 0.05f;
-    public GameObject globe;
-    public MapManager mapManager;
-    public GlobeManager globeManager;
-    public VideoPlayer globeVideo;
-    public GameObject particles;
-    public SpinFree spinner;
+    private GameObject globe;
+    private MapManager mapManager;
+    private GlobeManager globeManager;
+    private VideoPlayer globeVideo;
+    private GameObject particles;
+    private SpinFree spinner;
     public Vector3 startRot;
     public Vector3 endRot;
     private int currGlobeAnimation = 0;
@@ -31,12 +31,17 @@ public class FilmingController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        globe = GameObject.Find("Globe");
         startRot = globe.transform.eulerAngles;
         endRot = globe.transform.eulerAngles;
         mapPoints = GameObject.FindGameObjectsWithTag("data_point");
         _mapTableSync = GameObject.Find("Map").GetComponent<MapTableSync>();
         _globeSync = GameObject.Find("Globe Module").GetComponent<GlobeSync>();
-
+        mapManager = GameObject.Find("Map").GetComponent<MapManager>();
+        globeManager = GameObject.Find("Globe").GetComponent<GlobeManager>();
+        globeVideo = GameObject.Find("Globe").GetComponent<VideoPlayer>();
+        particles = GameObject.Find("Map Table Particles");
+        spinner = GameObject.Find("Globe").GetComponent<SpinFree>();
     }
 
     // Update is called once per frame
@@ -72,9 +77,9 @@ public class FilmingController : MonoBehaviour
         if (Input.GetKey("1")) // Select location 1 (Tokyo)
         {
             spinner.spin = false;
-            var tpoint = GameObject.Find("Tokyo");
+            var tpoint = GameObject.Find("Cambridge");
             var tmpm = tpoint.GetComponent<MapPinManager>();
-            var spoint = GameObject.Find("San Francisco");
+            var spoint = GameObject.Find("Venice");
             var smpm = spoint.GetComponent<MapPinManager>();
             startRot = globe.transform.eulerAngles;
             endRot = new Vector3(0, 0, 0);
@@ -94,9 +99,9 @@ public class FilmingController : MonoBehaviour
         }
         if (Input.GetKey("2")) // Select location 2 (sf)
         {
-            var spoint = GameObject.Find("San Francisco");
+            var spoint = GameObject.Find("Cambridge");
             var smpm = spoint.GetComponent<MapPinManager>();
-            var tpoint = GameObject.Find("Tokyo");
+            var tpoint = GameObject.Find("Venice");
             var tmpm = tpoint.GetComponent<MapPinManager>();
             spinner.spin = false;
             startRot = globe.transform.eulerAngles;

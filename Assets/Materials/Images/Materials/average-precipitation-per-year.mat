@@ -22,7 +22,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: average-precipitation-per-year
   m_Shader: {fileID: 4800000, guid: 650dd9526735d5b46b79224bc6e94025, type: 3}
-  m_ShaderKeywords: _GLOSSYREFLECTIONS_OFF
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -34,7 +34,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: cece331d4e032e84f969e1c4e9dddf64, type: 3}
+        m_Texture: {fileID: 2800000, guid: 54423637f1ade8149af135284b6ee428, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -58,7 +58,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: cece331d4e032e84f969e1c4e9dddf64, type: 3}
+        m_Texture: {fileID: 2800000, guid: 54423637f1ade8149af135284b6ee428, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:

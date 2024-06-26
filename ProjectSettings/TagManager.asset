@@ -11,6 +11,11 @@ TagManager:
   - hyperwall
   - data_point
   - EnvObj
+  - panel
+  - PanelOptn
+  - content
+  - ticks
+  - slider
   layers:
   - Default
   - TransparentFX

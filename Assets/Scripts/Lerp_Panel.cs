@@ -5,8 +5,8 @@ using UnityEngine;
 public class Lerp_Panel : MonoBehaviour
 {
     public GameObject Panel;
-    private Vector3 localPositionToMoveTo = new Vector3(5.8f, 5.8f, -3f); // Example target position
-    private Vector3 targetLocalScale = new Vector3(0.95f, 1f, 0.66f); // Example target scale
+    private Vector3 localPositionToMoveTo = new Vector3(5.8f, 5.8f, -3f); 
+    private Vector3 targetLocalScale = new Vector3(0.95f, 1f, 0.66f); 
     private float duration = 2f; // Duration to reach the target position and scale
 
     private Vector3 originalLocalPosition;
@@ -20,7 +20,6 @@ public class Lerp_Panel : MonoBehaviour
         originalLocalScale = Panel.transform.localScale;
     }
 
-    // Method to start the Lerp process
     public void Lerpin()
     {
         if (isAtTarget)

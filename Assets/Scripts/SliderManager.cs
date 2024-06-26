@@ -9,20 +9,11 @@ public class SliderManager : MonoBehaviour
 
     private List<GameObject> tickObjects;
     private List<float> tickPositions;
-    private float tolerance = 0.01f; // Adjust this value as needed to handle precision issues
+    private float tolerance = 0.01f; 
 
     void Start()
     {
         slider = GameObject.FindGameObjectWithTag("slider");
-
-        if (slider == null)
-        {
-            Debug.LogWarning("Slider GameObject not found in Start!");
-        }
-        else
-        {
-            Debug.Log("Slider GameObject found in Start.");
-        }
 
         tickObjects = new List<GameObject>(GameObject.FindGameObjectsWithTag("ticks"));
         tickPositions = new List<float>();
@@ -33,8 +24,6 @@ public class SliderManager : MonoBehaviour
         }
 
         tickPositions.Sort(); // Sort the tick positions in ascending order
-
-        Debug.Log("Found " + tickObjects.Count + " tick objects.");
     }
 
     void Update()
@@ -42,15 +31,6 @@ public class SliderManager : MonoBehaviour
         if (slider == null)
         {
             slider = GameObject.FindGameObjectWithTag("slider");
-            if (slider == null)
-            {
-                Debug.Log("Slider GameObject not found in Update!");
-                return;
-            }
-            else
-            {
-                Debug.Log("Slider GameObject found in Update.");
-            }
         }
 
         CheckSliderPosition();
@@ -59,11 +39,6 @@ public class SliderManager : MonoBehaviour
     public void CheckSliderPosition()
     {
         slider = GameObject.FindGameObjectWithTag("slider");
-        if (slider == null)
-        {
-            Debug.LogWarning("Slider GameObject not assigned!");
-            return;
-        }
 
         float sliderXPosition = slider.transform.position.x;
 
@@ -82,18 +57,8 @@ public class SliderManager : MonoBehaviour
 
         if (closestIndex != -1)
         {
-            if (Panel == null)
-            {
-                Debug.LogWarning("Panel GameObject not assigned!");
-                return;
-            }
 
             Renderer renderer = Panel.GetComponent<Renderer>();
-            if (renderer == null)
-            {
-                Debug.LogWarning("Renderer component not found on Panel!");
-                return;
-            }
 
             if (closestIndex < displayImage.Length)
             {

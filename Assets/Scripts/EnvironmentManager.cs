@@ -1,4 +1,6 @@
-using Microsoft.MixedReality.Toolkit.UI;
+using MixedReality.Toolkit.Input;
+using UnityEngine.XR.Interaction.Toolkit;
+using Microsoft.MixedReality.GraphicsTools;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +14,7 @@ public class EnvironmentManager : MonoBehaviour
     public GameObject water;
     public float waterLevel;
     public Slider waterSlider;
-    public PinchSlider pinchSlider;
+    public MixedReality.Toolkit.UX.Slider pinchSlider;
 
     private GameObject[] tooltips;
     private bool showtooltips = true;

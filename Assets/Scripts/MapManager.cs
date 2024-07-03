@@ -5,7 +5,10 @@ using Microsoft.Geospatial;
 using Microsoft.Maps.Unity;
 using UnityEngine.UI;
 using TMPro;
-using Microsoft.MixedReality.Toolkit.UI;
+using MixedReality.Toolkit.Input;
+using MixedReality.Toolkit.UX;
+using UnityEngine.XR.Interaction.Toolkit;
+using Microsoft.MixedReality.GraphicsTools;
 
 public class MapManager : MonoBehaviour
 {
@@ -19,8 +22,8 @@ public class MapManager : MonoBehaviour
     public GameObject water;
     public float waterLevel;
     //public Slider waterSlider;
-    public PinchSlider waterSlider;
-    public PinchSlider zoomSlider;
+    public MixedReality.Toolkit.UX.Slider waterSlider;
+    public MixedReality.Toolkit.UX.Slider zoomSlider;
     public float initialWaterHeight;
     public GlobeManager globeManager;
     public ParticleSystem particles;

@@ -5,7 +5,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
-using Microsoft.MixedReality.Toolkit.UI;
+using MixedReality.Toolkit.Input;
+using UnityEngine.XR.Interaction.Toolkit;
+
 
 [ExecuteInEditMode]
 public class ControlPanelManager : MonoBehaviour

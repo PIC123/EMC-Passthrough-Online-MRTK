@@ -9,14 +9,8 @@ EditorBuildSettings:
     path: Assets/MRTK-Online-2/Examples/PassthroughMultiplayerMRTK.unity
     guid: b8a6eb782dfc42c44a32de8025a5cfd4
   - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
     path: Assets/Samples/MRTKExamples/2.5.1/Joystick/JoystickExample.unity
     guid: d10fbf20b47452c45a0f4f551d4541fd
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/Samples/MRTKExamples/2.5.1/HandMenuLayout/Scenes/HandMenuLayoutExamples.unity
     guid: 9e1c6bf44fb90c54dbf82acf2808c16f
@@ -26,9 +20,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/EMC-passthrough-test.unity
     guid: 5aab928b180ad5c4d9dd317b97cdd650
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/Scenes/EMC-desktop-layout1.unity
     guid: 7d4ca24fc6b259a4ca3799e56ff8d2a7
@@ -43,6 +34,8 @@ EditorBuildSettings:
     guid: 1454e9995166878408e809ddc08e79db
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b1a734d715cea0043bf356a4c3fc51f0,
+      type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 7f9e63ab2abd7cd40b9da5ef45101612,
       type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2354e1c4f6340394394720adab854acc,
       type: 2}

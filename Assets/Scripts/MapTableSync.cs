@@ -122,7 +122,7 @@ public class MapTableSync : RealtimeComponent<MapTableSyncModel>
 
     private void UpdateWaterLevel()
     {
-        _mapManager.waterSlider.SliderValue = model.waterHeight;
+        _mapManager.waterSlider.Value = model.waterHeight;
     }
 
     private void UpdateParticlesVisible()

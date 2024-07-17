@@ -177,6 +177,7 @@ public class GlobeManager : MonoBehaviour
     {
         //videoPlayer.url = globeAnimationUrls[mapType];
         videoPlayer.clip = globeAnimationClips[mapType];
+        _globeSync.SetGlobeLayer(mapType);
     }
 
     public void setGlobeScale(float globescale)

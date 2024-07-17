@@ -9,14 +9,8 @@ EditorBuildSettings:
     path: Assets/MRTK-Online-2/Examples/PassthroughMultiplayerMRTK.unity
     guid: b8a6eb782dfc42c44a32de8025a5cfd4
   - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
     path: Assets/Samples/MRTKExamples/2.5.1/Joystick/JoystickExample.unity
     guid: d10fbf20b47452c45a0f4f551d4541fd
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/Samples/MRTKExamples/2.5.1/HandMenuLayout/Scenes/HandMenuLayoutExamples.unity
     guid: 9e1c6bf44fb90c54dbf82acf2808c16f
@@ -27,9 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/EMC-passthrough-test.unity
     guid: 5aab928b180ad5c4d9dd317b97cdd650
   - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
     path: Assets/Scenes/EMC-desktop-layout1.unity
     guid: 7d4ca24fc6b259a4ca3799e56ff8d2a7
   - enabled: 0
@@ -38,11 +29,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/EMC-Dashboard-Update.unity
     guid: 98108e9f679957446a2982dfc40020ef
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VeniceScene.unity
     guid: 1454e9995166878408e809ddc08e79db
+  - enabled: 1
+    path: Assets/Scenes/FireStoryVideoScene-Desktop.unity
+    guid: 02e2191df23933e45855e576c31d9c8d
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b1a734d715cea0043bf356a4c3fc51f0,
+      type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 9f7011dff75af7145a98d9569fa05e7e,
       type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2354e1c4f6340394394720adab854acc,
       type: 2}

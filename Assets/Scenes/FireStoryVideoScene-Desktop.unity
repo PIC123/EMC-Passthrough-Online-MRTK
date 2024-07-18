@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.54294086, g: 0.3667672, b: 0.2617527, a: 1}
+  m_IndirectSpecularColor: {r: 0.5596614, g: 0.41432574, b: 0.33346704, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13561,7 +13561,7 @@ MonoBehaviour:
   _viewUUID: 44eb9bb9-1eb0-4543-8a5b-def53e331a23
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -15349,7 +15349,7 @@ MonoBehaviour:
   _viewUUID: 49eafe64-fd66-4b78-954f-121e9cac4428
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -30792,7 +30792,7 @@ Transform:
   m_GameObject: {fileID: 189039371}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.59, y: 2.54, z: 0}
+  m_LocalPosition: {x: -13.59, y: 2.54, z: 2.43}
   m_LocalScale: {x: 6.9218793, y: 6.9218793, z: 6.9218793}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30946,12 +30946,12 @@ MonoBehaviour:
   m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _realtime: {fileID: 1880274006}
+  _realtime: {fileID: 0}
   _sceneViewUUID: 
-  _viewUUID: 2aa49845-e487-4a24-8a92-ad03ba8e5391
+  _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 1
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -33274,20 +33274,36 @@ MonoBehaviour:
   _viewUUID: 2d02c451-7afc-4ed4-ab4b-8e7436a825e0
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 199510437}
   _childViews:
-  - viewID: 1
-    view: {fileID: 0}
-  - viewID: 2
-    view: {fileID: 0}
-  - viewID: 3
-    view: {fileID: 0}
-  - viewID: 4
-    view: {fileID: 0}
+  - componentID: 1
+    component: {fileID: 0}
+  - componentID: 2
+    component: {fileID: 0}
+  - componentID: 3
+    component: {fileID: 0}
+  - componentID: 4
+    component: {fileID: 0}
+  - componentID: 5
+    component: {fileID: 1157860820}
+  - componentID: 6
+    component: {fileID: 1067120330}
+  - componentID: 7
+    component: {fileID: 1984768319}
+  - componentID: 8
+    component: {fileID: 1114201545}
+  - componentID: 9
+    component: {fileID: 383280813}
+  - componentID: 10
+    component: {fileID: 445519137}
+  - componentID: 11
+    component: {fileID: 257986232}
+  - componentID: 12
+    component: {fileID: 927233729}
 --- !u!114 &199510439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39648,6 +39664,201 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257505459}
   m_Mesh: {fileID: 4300010, guid: b566bbce04d66f4428421e81a3af0299, type: 3}
+--- !u!1 &257986229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 257986230}
+  - component: {fileID: 257986237}
+  - component: {fileID: 257986236}
+  - component: {fileID: 257986235}
+  - component: {fileID: 257986234}
+  - component: {fileID: 257986233}
+  - component: {fileID: 257986232}
+  - component: {fileID: 257986231}
+  m_Layer: 0
+  m_Name: Plane (2)
+  m_TagString: panel
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &257986230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257986229}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.078926265, y: -0.079105, z: -0.70279276, w: 0.7025636}
+  m_LocalPosition: {x: 6, y: 3.92, z: -5.25}
+  m_LocalScale: {x: 0.3169595, y: 0.43432, z: 0.43417227}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1100377012}
+  m_LocalEulerAnglesHint: {x: -0.016, y: -12.832, z: -90.017}
+--- !u!114 &257986231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257986229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01aec1ca9b0852248aa8e7064c0a95d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &257986232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257986229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: ebae63e7edba59945a994528ada1f7a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 0}
+  _sceneViewUUID: 
+  _viewUUID: 
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 257986231}
+  _childViews: []
+--- !u!328 &257986233
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257986229}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 0}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 3
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_TimeUpdateMode: 2
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
+--- !u!114 &257986234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257986229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f2ed810d56a7b4bb66cdc3ea14fd22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hyperwallNum: 0
+  panelNum: 0
+--- !u!64 &257986235
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257986229}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &257986236
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257986229}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &257986237
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257986229}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &259798803
 GameObject:
   m_ObjectHideFlags: 0
@@ -45804,7 +46015,7 @@ MonoBehaviour:
   _viewUUID: c6e06a6d-166c-4612-a06d-46622626c1b7
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -53366,7 +53577,7 @@ MonoBehaviour:
   _viewUUID: b653a67a-615a-4889-af8e-edbd03600adb
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -54642,7 +54853,7 @@ MonoBehaviour:
   _viewUUID: 5c567eca-3e88-4fdb-8d58-70c57fd3d91e
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -56618,6 +56829,201 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382961332}
   m_Mesh: {fileID: 4300010, guid: b566bbce04d66f4428421e81a3af0299, type: 3}
+--- !u!1 &383280810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 383280811}
+  - component: {fileID: 383280818}
+  - component: {fileID: 383280817}
+  - component: {fileID: 383280816}
+  - component: {fileID: 383280815}
+  - component: {fileID: 383280814}
+  - component: {fileID: 383280813}
+  - component: {fileID: 383280812}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: panel
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &383280811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383280810}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.078926265, y: -0.079105, z: -0.70279276, w: 0.7025636}
+  m_LocalPosition: {x: 5.98, y: 7.46, z: -5.27}
+  m_LocalScale: {x: 0.3169595, y: 0.43432, z: 0.43417227}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1100377012}
+  m_LocalEulerAnglesHint: {x: -0.016, y: -12.832, z: -90.017}
+--- !u!114 &383280812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383280810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01aec1ca9b0852248aa8e7064c0a95d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &383280813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383280810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: ebae63e7edba59945a994528ada1f7a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 0}
+  _sceneViewUUID: 
+  _viewUUID: 
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 383280812}
+  _childViews: []
+--- !u!328 &383280814
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383280810}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 0}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 3
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_TimeUpdateMode: 2
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
+--- !u!114 &383280815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383280810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f2ed810d56a7b4bb66cdc3ea14fd22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hyperwallNum: 0
+  panelNum: 0
+--- !u!64 &383280816
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383280810}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &383280817
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383280810}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &383280818
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383280810}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &383902869
 GameObject:
   m_ObjectHideFlags: 0
@@ -63265,7 +63671,7 @@ MonoBehaviour:
   _viewUUID: 4554e7c1-b18e-4b5f-ae17-4ea99b0f0486
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -64323,14 +64729,16 @@ MonoBehaviour:
   _viewUUID: 1ac01a23-8160-4b75-95ef-abd7634891bd
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
+    component: {fileID: 0}
+  - componentID: 2
     component: {fileID: 430930855}
   _childViews:
-  - viewID: 1
-    view: {fileID: 189039380}
+  - componentID: 1
+    component: {fileID: 189039380}
 --- !u!1 &431782813
 GameObject:
   m_ObjectHideFlags: 0
@@ -64645,7 +65053,7 @@ MonoBehaviour:
   _viewUUID: cfdc228f-9350-4e00-8e5a-04146905d2b8
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -66303,6 +66711,201 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 444073824}
   m_Mesh: {fileID: 4300002, guid: e963263242b6cbb4bbbf279f0c0e7789, type: 3}
+--- !u!1 &445519134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 445519135}
+  - component: {fileID: 445519142}
+  - component: {fileID: 445519141}
+  - component: {fileID: 445519140}
+  - component: {fileID: 445519139}
+  - component: {fileID: 445519138}
+  - component: {fileID: 445519137}
+  - component: {fileID: 445519136}
+  m_Layer: 0
+  m_Name: Plane (1)
+  m_TagString: panel
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &445519135
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445519134}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.078926265, y: -0.079105, z: -0.70279276, w: 0.7025636}
+  m_LocalPosition: {x: 4.96, y: 7.53, z: -0.7}
+  m_LocalScale: {x: 0.3169595, y: 0.43432, z: 0.43417227}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1100377012}
+  m_LocalEulerAnglesHint: {x: -0.016, y: -12.832, z: -90.017}
+--- !u!114 &445519136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445519134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01aec1ca9b0852248aa8e7064c0a95d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &445519137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445519134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: ebae63e7edba59945a994528ada1f7a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 0}
+  _sceneViewUUID: 
+  _viewUUID: 
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 445519136}
+  _childViews: []
+--- !u!328 &445519138
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445519134}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 0}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 3
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_TimeUpdateMode: 2
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
+--- !u!114 &445519139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445519134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f2ed810d56a7b4bb66cdc3ea14fd22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hyperwallNum: 0
+  panelNum: 0
+--- !u!64 &445519140
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445519134}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &445519141
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445519134}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &445519142
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445519134}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &445955871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67955,7 +68558,7 @@ MonoBehaviour:
   _viewUUID: e6b89a67-ee68-4093-9fc4-62722f7c3ec7
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -68421,7 +69024,7 @@ MonoBehaviour:
   _viewUUID: f0e1074a-4527-4d69-9fab-c1dd718c92e9
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -69474,7 +70077,7 @@ MonoBehaviour:
   _viewUUID: 5b4f6df2-b6e1-43c4-aa0d-641b83ac30ad
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -74570,7 +75173,7 @@ MonoBehaviour:
   _viewUUID: 739d3925-76be-46a9-a63c-1594fb0fb3de
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -82901,7 +83504,7 @@ MonoBehaviour:
   _viewUUID: 3446590b-5680-43b1-b433-cb6fe5d85375
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -88579,7 +89182,7 @@ MonoBehaviour:
   _viewUUID: 84ddae16-0c00-4cf6-9844-99ec1ea95992
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -100247,7 +100850,7 @@ MonoBehaviour:
   _viewUUID: 81dfe527-9d2e-48f9-9a80-2eba4a6c9c16
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -106442,7 +107045,7 @@ MonoBehaviour:
   _viewUUID: 365c9b5f-a61a-4767-8605-844560d0a318
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -108453,7 +109056,7 @@ MonoBehaviour:
   _viewUUID: 0ee37d26-5c00-4427-b411-17b9b66a0763
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -112425,7 +113028,7 @@ MonoBehaviour:
   _viewUUID: e9dad047-dd7f-449a-a1b4-05f6df37cd06
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -115675,7 +116278,7 @@ MonoBehaviour:
   _viewUUID: f93440df-e2ad-46a0-8695-6fe1c664a7bf
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -125863,7 +126466,7 @@ MonoBehaviour:
   _viewUUID: 7c987f07-319f-45ca-a485-6abdd861a524
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -129509,7 +130112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &783062254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130973,7 +131576,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &801955704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132971,7 +133574,7 @@ MonoBehaviour:
   _viewUUID: 0eb2e6a4-b72c-4b73-bfc4-012d151303c4
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -135719,7 +136322,7 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -138599,7 +139202,7 @@ MonoBehaviour:
   _viewUUID: 75d16799-ebae-44c5-8b37-ccf894315701
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -143663,7 +144266,7 @@ MonoBehaviour:
   _viewUUID: 64731f5f-da04-4d9d-ad8d-17b7b49d7e27
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -150006,6 +150609,201 @@ Transform:
   - {fileID: 1376261406}
   m_Father: {fileID: 841792441}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &927233726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 927233727}
+  - component: {fileID: 927233734}
+  - component: {fileID: 927233733}
+  - component: {fileID: 927233732}
+  - component: {fileID: 927233731}
+  - component: {fileID: 927233730}
+  - component: {fileID: 927233729}
+  - component: {fileID: 927233728}
+  m_Layer: 0
+  m_Name: Plane (3)
+  m_TagString: panel
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &927233727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927233726}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.078926265, y: -0.079105, z: -0.70279276, w: 0.7025636}
+  m_LocalPosition: {x: 5.02, y: 3.98, z: -0.66}
+  m_LocalScale: {x: 0.31724554, y: 0.43419275, z: 0.4375568}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1100377012}
+  m_LocalEulerAnglesHint: {x: -0.016, y: -12.832, z: -90.017}
+--- !u!114 &927233728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927233726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01aec1ca9b0852248aa8e7064c0a95d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &927233729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927233726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: ebae63e7edba59945a994528ada1f7a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 0}
+  _sceneViewUUID: 
+  _viewUUID: 
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 927233728}
+  _childViews: []
+--- !u!328 &927233730
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927233726}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 0}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 3
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_TimeUpdateMode: 2
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
+--- !u!114 &927233731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927233726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f2ed810d56a7b4bb66cdc3ea14fd22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hyperwallNum: 0
+  panelNum: 0
+--- !u!64 &927233732
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927233726}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &927233733
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927233726}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &927233734
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927233726}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &927841106
 GameObject:
   m_ObjectHideFlags: 0
@@ -152828,7 +153626,7 @@ MonoBehaviour:
   _viewUUID: 15eb7194-d2cf-4ce9-9180-85ba48649b97
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -153897,7 +154695,7 @@ MonoBehaviour:
   _viewUUID: 44453603-0778-4396-aec1-c04e977daec7
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -162000,20 +162798,24 @@ MonoBehaviour:
   _viewUUID: 88741ed7-a319-4447-9aba-cbb7cf985664
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
-    component: {fileID: 1016784426}
+    component: {fileID: 0}
   - componentID: 2
+    component: {fileID: 0}
+  - componentID: 3
+    component: {fileID: 1016784426}
+  - componentID: 4
     component: {fileID: 1016784425}
   _childViews:
-  - viewID: 1
-    view: {fileID: 1870614341}
-  - viewID: 2
-    view: {fileID: 1865345794}
-  - viewID: 3
-    view: {fileID: 832909050}
+  - componentID: 1
+    component: {fileID: 1870614341}
+  - componentID: 2
+    component: {fileID: 1865345794}
+  - componentID: 3
+    component: {fileID: 832909050}
 --- !u!114 &1016784428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168225,7 +169027,7 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -168351,14 +169153,14 @@ MonoBehaviour:
   _viewUUID: 5dbc997c-136b-451c-a4e7-d66fb0993a04
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 1062268623}
   _childViews:
-  - viewID: 1
-    view: {fileID: 1062268616}
+  - componentID: 1
+    component: {fileID: 1062268616}
 --- !u!114 &1062268623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169832,8 +170634,8 @@ GameObject:
   - component: {fileID: 1067120318}
   - component: {fileID: 1067120324}
   - component: {fileID: 1067120329}
-  - component: {fileID: 1067120331}
   - component: {fileID: 1067120330}
+  - component: {fileID: 1067120331}
   m_Layer: 0
   m_Name: TestPanel2N
   m_TagString: panel
@@ -170143,9 +170945,11 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
-  _components: []
+  _components:
+  - componentID: 1
+    component: {fileID: 1067120331}
   _childViews: []
 --- !u!114 &1067120331
 MonoBehaviour:
@@ -170159,7 +170963,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01aec1ca9b0852248aa8e7064c0a95d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hypeManager: {fileID: 0}
 --- !u!1 &1067243165
 GameObject:
   m_ObjectHideFlags: 0
@@ -174580,6 +175383,10 @@ Transform:
   - {fileID: 385471055}
   - {fileID: 728486539}
   - {fileID: 865954138}
+  - {fileID: 383280811}
+  - {fileID: 445519135}
+  - {fileID: 257986230}
+  - {fileID: 927233727}
   m_Father: {fileID: 199510434}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1100452798
@@ -175938,8 +176745,8 @@ GameObject:
   - component: {fileID: 1114201533}
   - component: {fileID: 1114201539}
   - component: {fileID: 1114201544}
-  - component: {fileID: 1114201546}
   - component: {fileID: 1114201545}
+  - component: {fileID: 1114201546}
   m_Layer: 0
   m_Name: TestPanel4N
   m_TagString: panel
@@ -176249,9 +177056,11 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
-  _components: []
+  _components:
+  - componentID: 1
+    component: {fileID: 1114201546}
   _childViews: []
 --- !u!114 &1114201546
 MonoBehaviour:
@@ -176265,7 +177074,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01aec1ca9b0852248aa8e7064c0a95d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hypeManager: {fileID: 0}
 --- !u!1001 &1116319286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -181116,8 +181924,8 @@ GameObject:
   - component: {fileID: 1157860808}
   - component: {fileID: 1157860814}
   - component: {fileID: 1157860819}
-  - component: {fileID: 1157860821}
   - component: {fileID: 1157860820}
+  - component: {fileID: 1157860821}
   m_Layer: 0
   m_Name: TestPanel1N
   m_TagString: panel
@@ -181283,7 +182091,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157860806}
   m_Enabled: 1
-  m_VideoClip: {fileID: 0}
+  m_VideoClip: {fileID: 32900000, guid: 8808c76c8dbf4eb46a91a0130342891e, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -181427,9 +182235,11 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
-  _components: []
+  _components:
+  - componentID: 1
+    component: {fileID: 1157860821}
   _childViews: []
 --- !u!114 &1157860821
 MonoBehaviour:
@@ -181443,7 +182253,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01aec1ca9b0852248aa8e7064c0a95d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hypeManager: {fileID: 0}
 --- !u!1 &1158396426
 GameObject:
   m_ObjectHideFlags: 0
@@ -193582,7 +194391,7 @@ MonoBehaviour:
   _viewUUID: c6b7c4e9-36ab-49ba-857f-e119b3315a83
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -199498,7 +200307,7 @@ MonoBehaviour:
   _viewUUID: 3f494993-dffb-4a0f-a7cb-201142e6b467
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -201966,7 +202775,7 @@ MonoBehaviour:
   _viewUUID: 504a3dbf-f5e0-4399-8b0e-c2d6c7136058
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -215018,7 +215827,7 @@ MonoBehaviour:
   _viewUUID: aee0aa00-87dc-4e0d-8e69-4188685cf437
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -217112,7 +217921,7 @@ MonoBehaviour:
   _viewUUID: 58d06c92-b4ef-4024-9a1d-e4c2dc5afd10
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -224449,7 +225258,7 @@ MonoBehaviour:
   _viewUUID: 7b97ae55-1ded-4770-8a47-cd3caadad769
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -229362,7 +230171,7 @@ MonoBehaviour:
   _viewUUID: cd61d8f2-8c5a-45da-8bbf-d15cc506d04b
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -231872,7 +232681,7 @@ MonoBehaviour:
   _viewUUID: 52d56247-d811-4f04-a59b-4abd992340e5
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -236923,7 +237732,7 @@ MonoBehaviour:
   _viewUUID: 4a52e5f8-5ebe-42dc-a164-77b6cc52ec62
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -238098,7 +238907,7 @@ MonoBehaviour:
   _viewUUID: 6292b0cb-908f-49e3-b079-eaf18fb19599
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -245805,7 +246614,7 @@ MonoBehaviour:
   _viewUUID: aa19eaab-25ef-429c-8036-808ada0a049d
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -245859,7 +246668,7 @@ MonoBehaviour:
   _viewUUID: 55787902-1e10-436d-860f-bb8b6dd4bf22
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -248824,7 +249633,7 @@ MonoBehaviour:
   _viewUUID: 271a4521-6949-49f6-85c6-fcb7ce7c8bb2
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -276207,7 +277016,7 @@ MonoBehaviour:
   _viewUUID: 6e5345fa-dc3e-4c66-b875-d00c3031d750
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -280351,10 +281160,12 @@ MonoBehaviour:
   _viewUUID: 2c53d841-ec5f-463a-b151-5605330c0a41
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
+    component: {fileID: 0}
+  - componentID: 2
     component: {fileID: 1852374908}
   _childViews: []
 --- !u!135 &1852374910
@@ -286249,7 +287060,7 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -286763,7 +287574,7 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -292281,14 +293092,14 @@ MonoBehaviour:
   _viewUUID: 30162bf7-c03f-4130-bcd3-00d83af118ce
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 1903164474}
   _childViews:
-  - viewID: 1
-    view: {fileID: 0}
+  - componentID: 1
+    component: {fileID: 0}
 --- !u!65 &1903164476
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -299313,7 +300124,7 @@ MonoBehaviour:
   _viewUUID: 4aaff9ab-3b11-49bc-9d66-03896ec61931
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -301883,7 +302694,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1976102053
 Transform:
   m_ObjectHideFlags: 0
@@ -301988,7 +302799,7 @@ MonoBehaviour:
   _viewUUID: 2ee37fa1-21bf-4bc9-be80-d7619b518768
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -302312,7 +303123,7 @@ MonoBehaviour:
   _viewUUID: 982abe92-5871-439c-8140-ab5fa27817c0
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -303654,8 +304465,8 @@ GameObject:
   - component: {fileID: 1984768307}
   - component: {fileID: 1984768313}
   - component: {fileID: 1984768318}
-  - component: {fileID: 1984768320}
   - component: {fileID: 1984768319}
+  - component: {fileID: 1984768320}
   m_Layer: 0
   m_Name: TestPanel3N
   m_TagString: panel
@@ -303963,9 +304774,11 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
-  _components: []
+  _components:
+  - componentID: 1
+    component: {fileID: 1984768320}
   _childViews: []
 --- !u!114 &1984768320
 MonoBehaviour:
@@ -303979,7 +304792,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01aec1ca9b0852248aa8e7064c0a95d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hypeManager: {fileID: 0}
 --- !u!1 &1985737807
 GameObject:
   m_ObjectHideFlags: 0
@@ -319995,7 +320807,7 @@ MonoBehaviour:
   _viewUUID: 1cd46f18-9c31-4be3-a115-5fa0ef70cb97
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -320238,7 +321050,7 @@ MonoBehaviour:
   _viewUUID: 0d054401-9629-47ac-93b0-b35a9473ed61
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -328708,7 +329520,7 @@ MonoBehaviour:
   _viewUUID: 2e59ec1c-0d23-4bb3-be60-61f2fbd5abe3
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1

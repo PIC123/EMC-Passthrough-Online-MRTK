@@ -1007,22 +1007,22 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 533312528172376316}
   _childViews:
-  - viewID: 1
-    view: {fileID: 4380820041363591051}
-  - viewID: 2
-    view: {fileID: 3557648801520463470}
-  - viewID: 3
-    view: {fileID: 8368872744305233950}
-  - viewID: 4
-    view: {fileID: 4777056319091033252}
-  - viewID: 5
-    view: {fileID: 6135091433511713142}
+  - componentID: 1
+    component: {fileID: 4380820041363591051}
+  - componentID: 2
+    component: {fileID: 3557648801520463470}
+  - componentID: 3
+    component: {fileID: 8368872744305233950}
+  - componentID: 4
+    component: {fileID: 4777056319091033252}
+  - componentID: 5
+    component: {fileID: 6135091433511713142}
 --- !u!114 &533312528172376316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1093,14 +1093,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 2287304308808647109}
   _childViews:
-  - viewID: 1
-    view: {fileID: 6183119082442733832}
+  - componentID: 1
+    component: {fileID: 6183119082442733832}
 --- !u!114 &2287304308808647109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1173,7 +1173,7 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -1248,14 +1248,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 4139006053853162278}
   _childViews:
-  - viewID: 1
-    view: {fileID: 4161918963402011567}
+  - componentID: 1
+    component: {fileID: 4161918963402011567}
 --- !u!114 &4139006053853162278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1328,14 +1328,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 9161731756338637043}
   _childViews:
-  - viewID: 1
-    view: {fileID: 3461023514660692798}
+  - componentID: 1
+    component: {fileID: 3461023514660692798}
 --- !u!114 &9161731756338637043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1408,7 +1408,7 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -2384,14 +2384,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 5215498624582321191}
   _childViews:
-  - viewID: 1
-    view: {fileID: 8874081927875102633}
+  - componentID: 1
+    component: {fileID: 8874081927875102633}
 --- !u!114 &5215498624582321191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2464,7 +2464,7 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -2572,16 +2572,16 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 129352847358075200}
   _childViews:
-  - viewID: 1
-    view: {fileID: 0}
-  - viewID: 2
-    view: {fileID: 2906858745660883085}
+  - componentID: 1
+    component: {fileID: 0}
+  - componentID: 2
+    component: {fileID: 2906858745660883085}
 --- !u!114 &129352847358075200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2652,14 +2652,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 7615049957747535696}
   _childViews:
-  - viewID: 1
-    view: {fileID: 1389359036695774021}
+  - componentID: 1
+    component: {fileID: 1389359036695774021}
 --- !u!114 &7615049957747535696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2732,7 +2732,7 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -2839,14 +2839,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 1355780422861070381}
   _childViews:
-  - viewID: 1
-    view: {fileID: 3935500157020346002}
+  - componentID: 1
+    component: {fileID: 3935500157020346002}
 --- !u!114 &1355780422861070381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2917,14 +2917,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 2449083634202089249}
   _childViews:
-  - viewID: 1
-    view: {fileID: 2438733169138975497}
+  - componentID: 1
+    component: {fileID: 2438733169138975497}
 --- !u!114 &2449083634202089249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2995,14 +2995,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 7539957718644739749}
   _childViews:
-  - viewID: 1
-    view: {fileID: 8522710466452802782}
+  - componentID: 1
+    component: {fileID: 8522710466452802782}
 --- !u!114 &7539957718644739749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3075,7 +3075,7 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -3182,14 +3182,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 1388919836678369417}
   _childViews:
-  - viewID: 1
-    view: {fileID: 7323574826990653212}
+  - componentID: 1
+    component: {fileID: 7323574826990653212}
 --- !u!114 &1388919836678369417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3260,14 +3260,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 2745738734935073649}
   _childViews:
-  - viewID: 1
-    view: {fileID: 5963404206900261115}
+  - componentID: 1
+    component: {fileID: 5963404206900261115}
 --- !u!114 &2745738734935073649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3368,14 +3368,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 6332697952516442815}
   _childViews:
-  - viewID: 1
-    view: {fileID: 6524850370474682607}
+  - componentID: 1
+    component: {fileID: 6524850370474682607}
 --- !u!114 &6332697952516442815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4473,7 +4473,7 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -4941,26 +4941,26 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 6079301095082311384}
   _childViews:
-  - viewID: 1
-    view: {fileID: 0}
-  - viewID: 2
-    view: {fileID: 0}
-  - viewID: 3
-    view: {fileID: 0}
-  - viewID: 4
-    view: {fileID: 0}
-  - viewID: 5
-    view: {fileID: 0}
-  - viewID: 6
-    view: {fileID: 5368982690596130671}
-  - viewID: 7
-    view: {fileID: 7307549035118453681}
+  - componentID: 1
+    component: {fileID: 0}
+  - componentID: 2
+    component: {fileID: 0}
+  - componentID: 3
+    component: {fileID: 0}
+  - componentID: 4
+    component: {fileID: 0}
+  - componentID: 5
+    component: {fileID: 0}
+  - componentID: 6
+    component: {fileID: 5368982690596130671}
+  - componentID: 7
+    component: {fileID: 7307549035118453681}
 --- !u!114 &6079301095082311384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5035,7 +5035,7 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -5045,18 +5045,18 @@ MonoBehaviour:
   - componentID: 3
     component: {fileID: 2283090538204350290}
   _childViews:
-  - viewID: 1
-    view: {fileID: 6079094515854344926}
-  - viewID: 2
-    view: {fileID: 6079436850563091556}
-  - viewID: 3
-    view: {fileID: 6079181999707225584}
-  - viewID: 4
-    view: {fileID: 0}
-  - viewID: 5
-    view: {fileID: 0}
-  - viewID: 6
-    view: {fileID: 6591275625615849445}
+  - componentID: 1
+    component: {fileID: 6079094515854344926}
+  - componentID: 2
+    component: {fileID: 6079436850563091556}
+  - componentID: 3
+    component: {fileID: 6079181999707225584}
+  - componentID: 4
+    component: {fileID: 0}
+  - componentID: 5
+    component: {fileID: 0}
+  - componentID: 6
+    component: {fileID: 6591275625615849445}
 --- !u!114 &6079804577666269260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5244,7 +5244,7 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -5315,16 +5315,16 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 6079730187737500260}
   _childViews:
-  - viewID: 1
-    view: {fileID: 557419559944856071}
-  - viewID: 2
-    view: {fileID: 5637283587939032790}
+  - componentID: 1
+    component: {fileID: 557419559944856071}
+  - componentID: 2
+    component: {fileID: 5637283587939032790}
 --- !u!114 &6079730187737500260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5479,7 +5479,7 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -5551,7 +5551,7 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -6673,14 +6673,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 6755198919962667722}
   _childViews:
-  - viewID: 1
-    view: {fileID: 4548528359754928948}
+  - componentID: 1
+    component: {fileID: 4548528359754928948}
 --- !u!114 &6755198919962667722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6753,7 +6753,7 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -6860,14 +6860,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 6089116823480773216}
   _childViews:
-  - viewID: 1
-    view: {fileID: 318846712698887564}
+  - componentID: 1
+    component: {fileID: 318846712698887564}
 --- !u!114 &6089116823480773216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6938,14 +6938,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 2135722744314146480}
   _childViews:
-  - viewID: 1
-    view: {fileID: 3507343301967517153}
+  - componentID: 1
+    component: {fileID: 3507343301967517153}
 --- !u!114 &2135722744314146480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7018,7 +7018,7 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -7126,14 +7126,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 1834785281644488304}
   _childViews:
-  - viewID: 1
-    view: {fileID: 5850671153089402128}
+  - componentID: 1
+    component: {fileID: 5850671153089402128}
 --- !u!114 &1834785281644488304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7204,14 +7204,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 6659717744025389231}
   _childViews:
-  - viewID: 1
-    view: {fileID: 6698924971520574248}
+  - componentID: 1
+    component: {fileID: 6698924971520574248}
 --- !u!114 &6659717744025389231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7282,14 +7282,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 178665596886698414}
   _childViews:
-  - viewID: 1
-    view: {fileID: 6680165128449860064}
+  - componentID: 1
+    component: {fileID: 6680165128449860064}
 --- !u!114 &178665596886698414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7390,14 +7390,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 5801738104236297102}
   _childViews:
-  - viewID: 1
-    view: {fileID: 4461494421312025753}
+  - componentID: 1
+    component: {fileID: 4461494421312025753}
 --- !u!114 &5801738104236297102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7468,14 +7468,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 3034792997413757233}
   _childViews:
-  - viewID: 1
-    view: {fileID: 8647320754907263996}
+  - componentID: 1
+    component: {fileID: 8647320754907263996}
 --- !u!114 &3034792997413757233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7546,14 +7546,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 3279983464347086506}
   _childViews:
-  - viewID: 1
-    view: {fileID: 612975609194579897}
+  - componentID: 1
+    component: {fileID: 612975609194579897}
 --- !u!114 &3279983464347086506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7626,7 +7626,7 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -8228,14 +8228,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 1240987979138136860}
   _childViews:
-  - viewID: 1
-    view: {fileID: 4828298688194782148}
+  - componentID: 1
+    component: {fileID: 4828298688194782148}
 --- !u!114 &1240987979138136860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8308,14 +8308,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 5910224887239081448}
   _childViews:
-  - viewID: 1
-    view: {fileID: 4287549982806695006}
+  - componentID: 1
+    component: {fileID: 4287549982806695006}
 --- !u!114 &5910224887239081448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8388,7 +8388,7 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
@@ -8556,22 +8556,22 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 3174880468719677562}
   _childViews:
-  - viewID: 1
-    view: {fileID: 4437340330804618941}
-  - viewID: 2
-    view: {fileID: 7471182573245614482}
-  - viewID: 3
-    view: {fileID: 1305185360472678787}
-  - viewID: 4
-    view: {fileID: 4250459445297503185}
-  - viewID: 5
-    view: {fileID: 8426898327326248606}
+  - componentID: 1
+    component: {fileID: 4437340330804618941}
+  - componentID: 2
+    component: {fileID: 7471182573245614482}
+  - componentID: 3
+    component: {fileID: 1305185360472678787}
+  - componentID: 4
+    component: {fileID: 4250459445297503185}
+  - componentID: 5
+    component: {fileID: 8426898327326248606}
 --- !u!114 &3174880468719677562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8642,14 +8642,14 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
     component: {fileID: 2297108015298200751}
   _childViews:
-  - viewID: 1
-    view: {fileID: 5767488533200271527}
+  - componentID: 1
+    component: {fileID: 5767488533200271527}
 --- !u!114 &2297108015298200751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8722,7 +8722,7 @@ MonoBehaviour:
   _viewUUID: 
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1

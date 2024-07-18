@@ -6,7 +6,7 @@ using Normal.Realtime;
 
 public class PanelSync : RealtimeComponent<PanelSyncModel>
 {
-    [SerializeField] private HyperwallManager _hypeManager;
+    private HyperwallManager _hypeManager;
     private void Awake()
     {
         _hypeManager = GameObject.Find("Hyperwalls").GetComponent<HyperwallManager>();
@@ -53,7 +53,6 @@ public class PanelSync : RealtimeComponent<PanelSyncModel>
                         }
                     }
                 }
-
                 UpdateContent();
             }
                 //if (_globeManager.selectedMarker.title != "")

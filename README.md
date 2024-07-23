@@ -4,7 +4,29 @@
 
 An immersive, multi-user VR/AR data visualization platform, aimed at enabling climate scientists to more effectively communicate their data stories to policy makers to drive more informed policy decisions.
 
-##
+## Game Object Assets and Interactives
+
+ - Interactive Globe Module
+   - Travel and visualize and city/region on the map table by adding and selecting locations on the Earth globe object. This object is particularly useful in visualizing areas that are most impacted by climate change.
+   - Modifiable texture allowing for different global data visualizations.
+ - Map Table
+   - Visualization of selected locations from the globe. Position and zoom levels are configurable using the palm-up hand console.
+ - Slider Mechanism
+   - Allows for dynamic visualizations where the user may slide through specific values and see how a particular environment or dataset changes, dependent on that value.
+   An example scene contains a slider mechanism displaying how Venice, Italy is affected by sea level rise. 
+ - EarthBot
+   - Live AI bot powered by ChatGPT to ask climate-related questions that a user may have when interacting with the platform.
+   - Many controls and teleportation can also be made using EarthBot
+ - Hyperwalls
+   - Display multiple Earth observation data visualizations on one data panel, allowing for the user to compare and contrast different visualizations at the same time.
+   - Magnification capabilities of specific panel along the entire hyperwall also exist.
+ - Palm-Up Hand Console
+   - Pinnable panel which contains all of the controls for hyperwall and global visualizations.
+   - Movement in the map table is controlled by this panel as well.
+ - Multi-User Capability
+   - Interact with up to 16 players within EMC at once no matter their location!
+   - With hand tracking capabilities the users can create dynamic gestures and point at different items within the environment, along with a live voice chat.
+   
 
 ## Set-Up/Installation
 
@@ -30,6 +52,8 @@ The relevant files for the EMC environment are:
    - The manager script for the map table and is responsible for controlling the zoom level, map location, water level visualization, particle simulation, and location info for the dashboard. 
  - Assets/Scripts/MapPinManager.cs
    - The manager script for the map pins that appear on the globe. The data is loaded from a JSON file and sets up the visuals of the pins.
+ - Assets/Scripts/HyperwallManager.cs
+   - The manager script is used to change the content appearing in the hyperwall. Once the script is added as a component on an object the user can add which media assets they would like to have for selection.
 
 The relevant files for EarthBot are:
  - Assets/Scripts/ChatGPTAssistant.cs
@@ -45,7 +69,8 @@ The relevant files for EarthBot are:
  - Assets/Scripts/ChatGPT/ChatGPTClient.cs
     - The main interface with the ChatGPT REST API. Includes logic for message history storage and sending the ChatGPT response to the ChatGPTAssistant script.
     - Adapted from DilmerVR chatbot implementation.
-
+  
+   
 ## Troubleshooting
 
 - If the scene loads without the environment fully loaded, open the package manager and re-import the asset called Nature Starter Kit 2. If it's not listed under the package manager, you can get it from the asset store as a free asset. 

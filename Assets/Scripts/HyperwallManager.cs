@@ -11,20 +11,22 @@ using static UnityEngine.Rendering.DebugUI;
 public class HyperwallManager : MonoBehaviour
 {
 
-    public int selectedHyperwall = -1;
-    public int selectedPanel = -1;
+    public int selectedHyperwall = 0;
+    public int selectedPanel = 0;
     public VideoClip[] Clips;
     public Texture[] Images;
     public GameObject[] togglePanels;
     private VideoPlayer videoPlayer;
     private GameObject[] hyperWalls;
-    private List<List<GameObject>> allPanelList;
+    public List<List<GameObject>> allPanelList;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         allPanelList = new List<List<GameObject>>();
         hyperWalls = GameObject.FindGameObjectsWithTag("hyperwall");
+        int wallCount = 0;
+        int panelCount = 0;
 
         // Iterate through each parent object
         foreach (GameObject hyperWall in hyperWalls)
@@ -40,10 +42,15 @@ public class HyperwallManager : MonoBehaviour
                     if (grandChild.CompareTag("panel"))
                     {
                         panelList.Add(grandChild.gameObject);
+                        PanelData pd = grandChild.GetComponent<PanelData>();
+                        pd.hyperwallNum = wallCount;
+                        pd.panelNum = panelCount;
+                        panelCount++;
                     }
                 }
             }
             allPanelList.Add(panelList);
+            wallCount++;
         }
     }
 
@@ -98,7 +105,7 @@ public class HyperwallManager : MonoBehaviour
         VideoPlayer panelVideoPlayer = selectedPanelObject.GetComponent<VideoPlayer>();
         panelVideoPlayer.clip = Clips[clipInd];
         videoPlayer.Play();
-
+        selectedPanelObject.GetComponent<PanelSync>().SetContent(0, clipInd);
     }
 
     public void selectImg(int imgInd)
@@ -108,6 +115,7 @@ public class HyperwallManager : MonoBehaviour
         renderer.material.mainTexture = Images[imgInd];
         VideoPlayer panelVideoPlayer = selectedPanelObject.GetComponent<VideoPlayer>();
         panelVideoPlayer.clip = null;
+        selectedPanelObject.GetComponent<PanelSync>().SetContent(1, imgInd);
     }
 
 }

@@ -1,5 +1,15 @@
 {
     "markers": [{
+        "longitude": 151.215256,
+        "latitude": -33.856159,
+        "title": "Sydney",
+        "co2": 136.6,
+        "ch4": 0.48,
+        "n2o": 0.15,
+        "h2o": 13760,
+        "description": "Venice is an interesting place",
+        "imgURL": "https://earthmissioncontrolsa.blob.core.windows.net/360-env-images/honolulu-360-0.jpg"
+    },{
         "longitude": 12.3384,
         "latitude": 45.4346,
         "title": "Venice",
@@ -13,11 +23,21 @@
         "longitude": -71.0872,
         "latitude": 42.3605,
         "title": "Cambridge",
-        "co2": 29358,
+        "co2": 1.126,
+        "ch4": 0.156,
+        "n2o": 0.086,
+        "h2o": 17962,
+        "description": "Cambridge is an interesting place",
+        "imgURL": "https://earthmissioncontrolsa.blob.core.windows.net/360-env-images/honolulu-360-0.jpg"
+    },{
+        "longitude": -104.9903,
+        "latitude": 39.7392,
+        "title": "Denver",
+        "co2": 1.126,
         "ch4": 14,
         "n2o": 16,
         "h2o": 10760,
-        "description": "Cambridge is an interesting place",
+        "description": "Denver is an interesting place",
         "imgURL": "https://earthmissioncontrolsa.blob.core.windows.net/360-env-images/honolulu-360-0.jpg"
     },{
         "title": "Galveston",

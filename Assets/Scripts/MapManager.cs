@@ -142,68 +142,68 @@ public class MapManager : MonoBehaviour
 
 
         // Update Data Panel
-        co2Text.text = markerData.co2.ToString() + "\nmt/year";
-        co2Dial.fillAmount = ((markerData.co2 - 10000f) / 25000f)*0.5f; //(Mathf.Clamp(markerData.co2 - 25000f, 10000f, 35000f) / 10000f);
-        if(markerData.co2 > 31000f)
+        co2Text.text = markerData.co2.ToString() + "\nMMTCO2e/year";
+        co2Dial.fillAmount = (markerData.co2 - 135.8f)*0.5f; //(Mathf.Clamp(markerData.co2 - 25000f, 10000f, 35000f) / 10000f);
+        if(markerData.co2 > 90f)
         {
             co2Text.color = Color.red;
             co2Dial.color = Color.red;
-        } else if(markerData.co2 >28000f)
+        } else if(markerData.co2 >50)
         {
             co2Text.color = Color.yellow;
             co2Dial.color = Color.yellow;
-        } else if(markerData.co2 <=28000f)
+        } else if(markerData.co2 <=50f)
         {
             co2Text.color = Color.green;
             co2Dial.color = Color.green;
         }
-        n2oText.text = markerData.n2o.ToString() + "\nmt/year";
-        n2oDial.fillAmount = ((markerData.n2o - 5f) / 25f) * 0.5f;
-        if (markerData.n2o > 17f)
+        n2oText.text = markerData.n2o.ToString() + "\nMMTN2Oe/year";
+        n2oDial.fillAmount = ((markerData.n2o - .069f)/(.24f-.09f)) * 0.5f;
+        if (markerData.n2o > .15f)
         {
             n2oText.color = Color.red;
             n2oDial.color = Color.red;
         }
-        else if (markerData.n2o > 15f)
+        else if (markerData.n2o > .12f)
         {
             n2oText.color = Color.yellow;
             n2oDial.color = Color.yellow;
         }
-        else if (markerData.n2o <= 15f)
+        else if (markerData.n2o <= .09f)
         {
             n2oText.color = Color.green;
             n2oDial.color = Color.green;
         }
-        ch4Text.text = markerData.ch4.ToString() + "\nmt/year";
-        ch4Dial.fillAmount = ((markerData.ch4 - 5f) / 25f) * 0.5f;
-        if (markerData.ch4 > 17f)
+        ch4Text.text = markerData.ch4.ToString() + "\nMMTCH4e/year";
+        ch4Dial.fillAmount = (markerData.ch4 - .04f) * 0.5f;
+        if (markerData.ch4 > .9f)
         {
             ch4Text.color = Color.red;
             ch4Dial.color = Color.red;
         }
-        else if (markerData.ch4 > 15f)
+        else if (markerData.ch4 > .6f)
         {
             ch4Text.color = Color.yellow;
             ch4Dial.color = Color.yellow;
         }
-        else if (markerData.ch4 <= 15f)
+        else if (markerData.ch4 <= .6f)
         {
             ch4Text.color = Color.green;
             ch4Dial.color = Color.green;
         }
-        h2oText.text = markerData.h2o.ToString() + "\n3M gal/year";
+        h2oText.text = markerData.h2o.ToString() + "\nML/year";
         h2oDial.fillAmount = ((markerData.h2o - 10000f) / 13000f) * 0.5f;
-        if (markerData.h2o > 12000f)
+        if (markerData.h2o > 25000f)
         {
             h2oText.color = Color.red;
             h2oDial.color = Color.red;
         }
-        else if (markerData.h2o > 11000f)
+        else if (markerData.h2o > 17000f)
         {
             h2oText.color = Color.yellow;
             h2oDial.color = Color.yellow;
         }
-        else if (markerData.h2o <= 11000f)
+        else if (markerData.h2o <= 17000f)
         {
             h2oText.color = Color.green;
             h2oDial.color = Color.green;

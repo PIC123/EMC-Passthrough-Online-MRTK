@@ -86,7 +86,7 @@ public class GlobeSync : RealtimeComponent<GlobeSyncModel>
 
     private void UpdateGlobeLayer()
     {
-        _globeManager.setGlobeMap(model.currMapLayer);
+        _globeManager.setGlobeAnimation(model.currMapLayer);
     }
 
     private void UpdateGlobeRotation()

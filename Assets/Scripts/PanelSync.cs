@@ -7,9 +7,11 @@ using Normal.Realtime;
 public class PanelSync : RealtimeComponent<PanelSyncModel>
 {
     private HyperwallManager _hypeManager;
+    public PanelData pd;
     private void Awake()
     {
         _hypeManager = GameObject.Find("Hyperwalls").GetComponent<HyperwallManager>();
+        pd = gameObject.GetComponent<PanelData>();
     }
 
     protected override void OnRealtimeModelReplaced(PanelSyncModel previousModel, PanelSyncModel currentModel)
@@ -25,7 +27,6 @@ public class PanelSync : RealtimeComponent<PanelSyncModel>
             // If this is a model that has no data set on it, populate it with the current mesh renderer color.
             if (currentModel.isFreshModel)
             {
-                PanelData pd = gameObject.GetComponent<PanelData>();
                 if(gameObject.GetComponent<VideoPlayer>().clip == null)
                 {
                     Debug.Log($"target img: {gameObject.GetComponent<Renderer>().material.mainTexture}");
@@ -83,18 +84,23 @@ public class PanelSync : RealtimeComponent<PanelSyncModel>
 
     private void UpdateContent()
     {
-        switch (model.contentType)
+        if (_hypeManager.allPanelList.Count > 0)
         {
-            case 0: // video
-                _hypeManager.selectVid(model.contentIndex);
-                Debug.Log("updating vid");
-                break;
-            case 1: // img
-                _hypeManager.selectImg(model.contentIndex);
-                Debug.Log("updating img");
-                break;
-            case 2: // img series
-                break;
+            _hypeManager.selectedHyperwall = pd.hyperwallNum;
+            _hypeManager.selectedPanel = pd.panelNum;
+            switch (model.contentType)
+            {
+                case 0: // video
+                    _hypeManager.selectVid(model.contentIndex);
+                    Debug.Log("updating vid");
+                    break;
+                case 1: // img
+                    _hypeManager.selectImg(model.contentIndex);
+                    Debug.Log("updating img");
+                    break;
+                case 2: // img series
+                    break;
+            }
         }
     }
 

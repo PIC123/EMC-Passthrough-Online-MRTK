@@ -18,10 +18,10 @@ public class HyperwallManager : MonoBehaviour
     public GameObject[] togglePanels;
     private VideoPlayer videoPlayer;
     private GameObject[] hyperWalls;
-    private List<List<GameObject>> allPanelList;
+    public List<List<GameObject>> allPanelList;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         allPanelList = new List<List<GameObject>>();
         hyperWalls = GameObject.FindGameObjectsWithTag("hyperwall");

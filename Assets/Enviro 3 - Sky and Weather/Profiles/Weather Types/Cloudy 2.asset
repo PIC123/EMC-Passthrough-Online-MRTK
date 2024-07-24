@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cbac6e678443724c9bd2baf5d564c1d, type: 3}
   m_Name: Cloudy 2
   m_EditorClassIdentifier: 
-  showEditor: 0
+  showEditor: 1
   showEffectControls: 0
   showCloudControls: 1
-  showFlatCloudControls: 0
+  showFlatCloudControls: 1
   showFogControls: 0
   showLightingControls: 0
   showAuroraControls: 0
@@ -27,19 +27,19 @@ MonoBehaviour:
   cloudsOverride:
     ambientLightIntensity: 1
     showLayer1: 1
-    coverageLayer1: -0.15
+    coverageLayer1: 1
     dilateCoverageLayer1: 0
-    dilateTypeLayer1: 0
+    dilateTypeLayer1: 1
     typeModifierLayer1: 0.8
     anvilBiasLayer1: 0.11
-    scatteringIntensityLayer1: 0.88
-    multiScatteringALayer1: 0.66
-    multiScatteringBLayer1: 0.15
+    scatteringIntensityLayer1: 2
+    multiScatteringALayer1: 1
+    multiScatteringBLayer1: 1
     multiScatteringCLayer1: 1
-    powderIntensityLayer1: 0.8
-    silverLiningSpreadLayer1: 0.8
+    powderIntensityLayer1: 1
+    silverLiningSpreadLayer1: 1
     ligthAbsorbtionLayer1: 0.33
-    densityLayer1: 1.01
+    densityLayer1: 2
     densitySmoothnessLayer1: 1.31
     baseErosionIntensityLayer1: 0.4
     detailErosionIntensityLayer1: 0.22
@@ -63,10 +63,10 @@ MonoBehaviour:
     detailErosionIntensityLayer2: 0.521
     curlIntensityLayer2: 0.135
   flatCloudsOverride:
-    cirrusCloudsAlpha: 0.5
-    cirrusCloudsCoverage: 0.5
-    cirrusCloudsColorPower: 1
-    flatCloudsCoverage: 1.189
+    cirrusCloudsAlpha: 1
+    cirrusCloudsCoverage: 0.389
+    cirrusCloudsColorPower: 2
+    flatCloudsCoverage: 2
     flatCloudsDensity: 1
     flatCloudsLightIntensity: 0.478
     flatCloudsAmbientIntensity: 0.969
